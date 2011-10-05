@@ -1,0 +1,1639 @@
+2011-08-24 13:59:59,546 INFO Start to run all test cases
+2011-08-24 13:59:59,765 INFO Running test suite: c:\selectica\testcases\7143\Non_RAID
+runTest (TestContent.TestContent) ... 2011-08-24 14:00:43,703 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test.csv
+2011-08-24 14:00:43,703 INFO executing method start_testing parameters ['7143AC1']
+2011-08-24 14:02:04,562 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-08-24 14:02:04,562 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-08-24 14:02:09,578 INFO executing method select_feature_qty parameters ['3873', '2']
+2011-08-24 14:02:09,592 INFO 3873 has been selected by default
+2011-08-24 14:02:24,921 INFO executing method click_feature parameters ['A1NP']
+2011-08-24 14:02:40,842 INFO executing method click_feature parameters ['5978', 'Configuration option']
+2011-08-24 14:02:56,703 INFO executing method verify_feature_code_present parameters ['A1NX', 'Secondary array hard disk drives']
+2011-08-24 14:03:01,733 INFO executing method verify_feature_code_present parameters ['A1NX']
+2011-08-24 14:03:06,765 INFO executing method verify_feature_code_absent parameters ['A1NX', 'Primary array hard disk drives']
+2011-08-24 14:03:11,812 INFO executing method click_feature parameters ['7853']
+2011-08-24 14:03:22,717 INFO executing method select_feature_qty parameters ['A1P3', '4', 'Primary array hard disk drives']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 14:03:35,280 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test1.csv
+2011-08-24 14:03:35,280 INFO executing method start_testing parameters ['7143AC1']
+2011-08-24 14:04:38,233 INFO executing method title parameters ['Maximum memory slots verification']
+2011-08-24 14:04:38,233 INFO Test Case: Maximum memory slots verification
+2011-08-24 14:04:43,250 INFO executing method select_feature_qty parameters ['1712', '16']
+2011-08-24 14:04:43,265 INFO 1712 has been selected by default
+2011-08-24 14:04:48,421 INFO executing method select_feature_qty parameters ['1713', '16', 'Memory']
+2011-08-24 14:04:48,437 INFO 1713 has been selected by default
+2011-08-24 14:04:53,592 INFO executing method click_check_product parameters []
+2011-08-24 14:06:47,515 INFO executing method verify_error_message_present parameters ['The number of memory slots used (32) exceeds the number of memory slots that are available (16)']
+2011-08-24 14:06:47,890 ERROR Error message not found: 'The number of memory slots used (32) exceeds the number of memory slots that are available (16)'
+FAIL
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 117, in select_feature_qty
+    test_client = self.driver.find_element_by_xpath("//span[contains(.,'%s')]/parent::*/parent::*/parent::*//.[contains(@value,'%s')]/parent::*/parent::*//option[@value='%s']" % (group, feature_code, quantity))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//span[contains(.,\'Primary array hard disk drives\')]/parent::*/parent::*/parent::*//.[contains(@value,\'A1P3\')]/parent::*/parent::*//option[@value=\'4\']"}' 
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\7143\Non_RAID\test1.csv
+
+----------------------------------------------------------------------
+Ran 2 tests in 408.703s
+
+FAILED (failures=1, errors=1)
+2011-08-24 14:06:48,515 INFO Running test suite: c:\selectica\testcases\7145
+runTest (TestContent.TestContent) ... 2011-08-24 14:07:14,733 INFO Running test case c:\selectica\testcases\7145\testcase5a.csv
+2011-08-24 14:07:14,733 INFO executing method start_testing parameters ['7145AC1']
+2011-08-24 14:22:00,687 INFO Start to run all test cases
+2011-08-24 14:22:01,030 INFO Running test suite: c:\selectica\testcases\7143\Non_RAID
+runTest (TestContent.TestContent) ... 2011-08-24 14:22:16,780 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test.csv
+2011-08-24 14:22:16,780 INFO executing method start_testing parameters ['7143AC1']
+2011-08-24 14:23:47,233 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-08-24 14:23:47,233 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-08-24 14:23:52,250 INFO executing method select_feature_qty parameters ['3873', '2']
+2011-08-24 14:23:52,265 INFO 3873 has been selected by default
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 14:24:02,578 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test1.csv
+2011-08-24 14:24:02,578 INFO executing method start_testing parameters ['7143AC1']
+2011-08-24 14:25:31,953 INFO executing method title parameters ['Maximum memory slots verification']
+2011-08-24 14:25:31,953 INFO Test Case: Maximum memory slots verification
+2011-08-24 14:25:36,967 INFO executing method select_feature_qty parameters ['1712', '16']
+2011-08-24 14:25:36,983 INFO 1712 has been selected by default
+2011-08-24 14:25:42,187 INFO executing method select_feature_qty parameters ['1713', '16', 'Memory']
+2011-08-24 14:25:42,203 INFO 1713 has been selected by default
+2011-08-24 14:25:47,358 INFO executing method click_check_product parameters []
+2011-08-24 14:25:53,421 INFO executing method verify_error_message_present parameters ['The number of memory slots used (32) exceeds the number of memory slots that are available (16)']
+2011-08-24 14:25:53,437 ERROR Error message not found: 'The number of memory slots used (32) exceeds the number of memory slots that are available (16)'
+FAIL
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 114, in select_feature_qty
+    test_client = self.driver.find_element_by_xpath("//input[contains(@value,'%s')]/parent::*/parent::*//option[@value='%s']" % (feature_code, quantity))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,\'3873\')]/parent::*/parent::*//option[@value=\'2\']"}' 
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\7143\Non_RAID\test1.csv
+
+----------------------------------------------------------------------
+Ran 2 tests in 233.844s
+
+FAILED (failures=1, errors=1)
+2011-08-24 14:25:54,921 INFO Running test suite: c:\selectica\testcases\7145
+runTest (TestContent.TestContent) ... 2011-08-24 14:26:08,592 INFO Running test case c:\selectica\testcases\7145\testcase5a.csv
+2011-08-24 14:26:08,592 INFO executing method start_testing parameters ['7145AC1']
+2011-08-24 14:28:13,796 INFO executing method title parameters ['Verify whether sassata hd displayed without 3745']
+2011-08-24 14:28:13,796 INFO Test Case: Verify whether sassata hd displayed without 3745
+2011-08-24 14:28:18,812 INFO executing method select_feature_qty parameters ['3873', '1']
+2011-08-24 14:28:18,828 INFO 3873 has been selected by default
+2011-08-24 14:28:29,375 INFO executing method select_feature_qty parameters ['4191', '1']
+2011-08-24 14:28:29,390 INFO 4191 has been selected by default
+2011-08-24 14:28:49,108 INFO executing method select_feature_qty parameters ['95', '1']
+2011-08-24 14:28:49,125 INFO 95 has been selected by default
+2011-08-24 14:28:59,437 INFO executing method click_feature parameters ['5977']
+2011-08-24 14:29:25,187 INFO executing method verify_oc_present parameters ['SAS hard disk drive']
+2011-08-24 14:29:30,217 INFO executing method verify_oc_present parameters ['SATA hard disk drive']
+2011-08-24 14:29:35,280 INFO executing method verify_feature_code_absent parameters ['3745', 'Primary array hard disk drives']
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 233.063s
+
+OK
+2011-08-24 14:29:48,375 INFO Finished running all test cases
+2011-08-24 14:32:32,608 INFO Start to run all test cases
+2011-08-24 14:32:32,671 INFO Running test suite: c:\selectica\testcases\7143\Non_RAID
+runTest (TestContent.TestContent) ... 2011-08-24 14:32:52,046 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test.csv
+2011-08-24 14:32:52,046 INFO executing method start_testing parameters ['7143AC1']
+2011-08-24 14:34:26,078 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-08-24 14:34:26,078 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-08-24 14:34:31,108 INFO executing method select_feature_qty parameters ['3873', '2']
+2011-08-24 14:34:31,125 INFO 3873 has been selected by default
+2011-08-24 14:34:41,500 INFO executing method click_feature parameters ['A1NP']
+2011-08-24 14:34:52,233 INFO executing method click_feature parameters ['5978', 'Configuration option']
+2011-08-24 14:35:03,467 INFO executing method verify_feature_code_present parameters ['A1NX', 'Secondary array hard disk drives']
+2011-08-24 14:35:08,483 INFO executing method verify_feature_code_present parameters ['A1NX']
+2011-08-24 14:35:13,500 INFO executing method verify_feature_code_absent parameters ['A1NX', 'Primary array hard disk drives']
+2011-08-24 14:35:18,530 INFO executing method click_feature parameters ['7853']
+2011-08-24 14:35:34,421 INFO executing method select_feature_qty parameters ['A1P3', '4', 'Primary array hard disk drives']
+2011-08-24 14:35:39,687 INFO executing method click_feature parameters ['8145']
+2011-08-24 14:35:55,108 INFO executing method select_feature parameters ['A1AV', 'Secondary array hard disk drives']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 14:36:35,328 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test1.csv
+2011-08-24 14:36:35,358 INFO executing method start_testing parameters ['7143AC1']
+2011-08-24 14:37:30,812 INFO executing method title parameters ['Maximum memory slots verification']
+2011-08-24 14:37:30,812 INFO Test Case: Maximum memory slots verification
+2011-08-24 14:37:35,842 INFO executing method select_feature_qty parameters ['1712', '16']
+2011-08-24 14:37:35,842 INFO 1712 has been selected by default
+2011-08-24 14:37:41,062 INFO executing method select_feature_qty parameters ['1713', '16', 'Memory']
+2011-08-24 14:37:41,078 INFO 1713 has been selected by default
+2011-08-24 14:37:46,171 INFO executing method click_check_product parameters []
+2011-08-24 14:37:57,703 INFO executing method verify_error_message_present parameters ['The number of memory slots used (32) exceeds the number of memory slots that are available (16)']
+2011-08-24 14:37:57,717 ERROR Error message not found: 'The number of memory slots used (32) exceeds the number of memory slots that are available (16)'
+FAIL
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 125, in select_feature
+    test_client = self.driver.find_element_by_xpath("//span[contains(.,'%s')]/parent::*/parent::*/parent::*//option[contains(@value,'%s')]" % (group, feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//span[contains(.,\'Secondary array hard disk drives\')]/parent::*/parent::*/parent::*//option[contains(@value,\'A1AV\')]"}' 
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\7143\Non_RAID\test1.csv
+
+----------------------------------------------------------------------
+Ran 2 tests in 326.594s
+
+FAILED (failures=1, errors=1)
+2011-08-24 14:37:59,296 INFO Running test suite: c:\selectica\testcases\7145
+runTest (TestContent.TestContent) ... 2011-08-24 14:38:18,280 INFO Running test case c:\selectica\testcases\7145\testcase5a.csv
+2011-08-24 14:38:18,280 INFO executing method start_testing parameters ['7145AC1']
+2011-08-24 14:54:38,953 INFO Start to run all test cases
+2011-08-24 14:54:38,953 INFO Running test suite: c:\selectica\testcases\7143\Non_RAID
+runTest (TestContent.TestContent) ... 2011-08-24 14:54:44,562 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test.csv
+2011-08-24 14:54:44,562 INFO executing method start_testing parameters ['7143AC1']
+2011-08-24 14:55:25,937 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-08-24 14:55:25,937 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-08-24 14:55:30,953 INFO executing method select_feature_qty parameters ['3873', '2']
+2011-08-24 14:55:30,967 INFO 3873 has been selected by default
+2011-08-24 14:55:41,250 INFO executing method click_feature parameters ['A1NP']
+2011-08-24 14:55:57,015 INFO executing method click_feature parameters ['5978', 'Configuration option']
+2011-08-24 14:56:12,858 INFO executing method verify_feature_code_present parameters ['A1NX', 'Secondary array hard disk drives']
+2011-08-24 14:56:17,905 INFO executing method verify_feature_code_present parameters ['A1NX']
+2011-08-24 14:56:22,967 INFO executing method verify_feature_code_absent parameters ['A1NX', 'Primary array hard disk drives']
+2011-08-24 14:56:27,983 INFO executing method click_feature parameters ['7853']
+2011-08-24 14:56:38,796 INFO executing method select_feature_qty parameters ['A1P3', '4', 'Primary array hard disk drives']
+2011-08-24 14:56:44,015 INFO executing method click_feature parameters ['8145']
+2011-08-24 14:56:59,858 INFO executing method select_feature parameters ['A1AV', 'Secondary array hard disk drives']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 14:58:04,342 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test1.csv
+2011-08-24 14:58:04,342 INFO executing method start_testing parameters ['7143AC1']
+2011-08-24 14:59:08,562 INFO executing method title parameters ['Maximum memory slots verification']
+2011-08-24 14:59:08,562 INFO Test Case: Maximum memory slots verification
+2011-08-24 14:59:13,562 INFO executing method select_feature_qty parameters ['1712', '16']
+2011-08-24 14:59:13,578 INFO 1712 has been selected by default
+2011-08-24 14:59:18,655 INFO executing method select_feature_qty parameters ['1713', '16', 'Memory']
+2011-08-24 14:59:18,687 INFO 1713 has been selected by default
+2011-08-24 14:59:23,812 INFO executing method click_check_product parameters []
+2011-08-24 14:59:39,921 INFO executing method verify_error_message_present parameters ['The number of memory slots used (32) exceeds the number of memory slots that are available (16)']
+2011-08-24 14:59:39,967 ERROR Error message not found: 'The number of memory slots used (32) exceeds the number of memory slots that are available (16)'
+FAIL
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 125, in select_feature
+    test_client = self.driver.find_element_by_xpath("//span[contains(.,'%s')]/parent::*/parent::*/parent::*//option[contains(@value,'%s')]" % (group, feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//span[contains(.,\'Secondary array hard disk drives\')]/parent::*/parent::*/parent::*//option[contains(@value,\'A1AV\')]"}' 
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\7143\Non_RAID\test1.csv
+
+----------------------------------------------------------------------
+Ran 2 tests in 302.234s
+
+FAILED (failures=1, errors=1)
+2011-08-24 14:59:41,265 INFO Running test suite: c:\selectica\testcases\7145
+runTest (TestContent.TestContent) ... 2011-08-24 14:59:53,530 INFO Running test case c:\selectica\testcases\7145\testcase5a.csv
+2011-08-24 14:59:53,530 INFO executing method start_testing parameters ['7145AC1']
+2011-08-24 15:00:28,671 INFO executing method title parameters ['Verify whether sassata hd displayed without 3745']
+2011-08-24 15:00:28,671 INFO Test Case: Verify whether sassata hd displayed without 3745
+2011-08-24 15:00:33,687 INFO executing method select_feature_qty parameters ['3873', '1']
+2011-08-24 15:00:33,717 INFO 3873 has been selected by default
+2011-08-24 15:00:43,953 INFO executing method select_feature_qty parameters ['4191', '1']
+2011-08-24 15:00:43,967 INFO 4191 has been selected by default
+2011-08-24 15:00:49,092 INFO executing method select_feature_qty parameters ['95', '1']
+2011-08-24 15:00:49,092 INFO 95 has been selected by default
+2011-08-24 15:00:54,217 INFO executing method click_feature parameters ['5977']
+2011-08-24 15:01:29,983 INFO executing method verify_oc_present parameters ['SAS hard disk drive']
+2011-08-24 15:01:35,046 INFO executing method verify_oc_present parameters ['SATA hard disk drive']
+2011-08-24 15:01:40,078 INFO executing method verify_feature_code_absent parameters ['3745', 'Primary array hard disk drives']
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 125.844s
+
+OK
+2011-08-24 15:01:47,592 INFO Running test suite: c:\selectica\testcases\7145MT
+runTest (TestContent.TestContent) ... 2011-08-24 15:02:12,375 INFO Running test case c:\selectica\testcases\7145MT\testcase5a.csv
+2011-08-24 15:02:12,375 INFO executing method start_testing parameters ['7145AC1']
+2011-08-24 15:02:48,937 INFO executing method title parameters ['Verify whether sassata hd displayed without 3745']
+2011-08-24 15:02:48,937 INFO Test Case: Verify whether sassata hd displayed without 3745
+2011-08-24 15:02:53,983 INFO executing method select_feature_qty parameters ['3873', '1']
+2011-08-24 15:02:54,015 INFO 3873 has been selected by default
+2011-08-24 15:03:09,608 INFO executing method select_feature_qty parameters ['4191', '1']
+2011-08-24 15:03:09,625 INFO 4191 has been selected by default
+2011-08-24 15:03:14,780 INFO executing method select_feature_qty parameters ['95', '1']
+2011-08-24 15:03:14,812 INFO 95 has been selected by default
+2011-08-24 15:03:19,967 INFO executing method click_feature parameters ['5977']
+2011-08-24 15:03:30,733 INFO executing method verify_oc_present parameters ['SAS hard disk drive']
+2011-08-24 15:03:35,750 INFO executing method verify_oc_present parameters ['SATA hard disk drive']
+2011-08-24 15:03:40,765 INFO executing method verify_feature_code_absent parameters ['3745', 'Primary array hard disk drives']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:03:59,640 INFO Running test case c:\selectica\testcases\7145MT\testcase5b.csv
+2011-08-24 15:03:59,640 INFO executing method start_testing parameters ['7145AC1']
+2011-08-24 15:04:39,953 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-08-24 15:04:39,953 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-08-24 15:04:44,967 INFO executing method select_feature_qty parameters ['3873', '1']
+2011-08-24 15:04:44,983 INFO 3873 has been selected by default
+2011-08-24 15:05:00,280 INFO executing method select_feature_qty parameters ['4191', '1']
+2011-08-24 15:05:00,312 INFO 4191 has been selected by default
+2011-08-24 15:05:05,437 INFO executing method select_feature_qty parameters ['3577', '1']
+2011-08-24 15:05:05,453 INFO 3577 has been selected by default
+2011-08-24 15:05:10,530 INFO executing method click_feature parameters ['5977']
+2011-08-24 15:05:16,250 INFO executing method verify_oc_present parameters ['SAS hard disk drive']
+2011-08-24 15:05:21,280 INFO executing method verify_oc_present parameters ['SATA hard disk drive']
+2011-08-24 15:05:26,328 INFO executing method verify_feature_code_absent parameters ['3745', 'Primary array hard disk drives']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:05:45,171 INFO Running test case c:\selectica\testcases\7145MT\testcase5c.csv
+2011-08-24 15:05:45,171 INFO executing method start_testing parameters ['7145AC1']
+2011-08-24 15:06:11,546 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-08-24 15:06:11,546 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-08-24 15:06:16,578 INFO executing method select_feature_qty parameters ['3873', '1']
+2011-08-24 15:06:16,592 INFO 3873 has been selected by default
+2011-08-24 15:06:26,890 INFO executing method select_feature_qty parameters ['4191', '1']
+2011-08-24 15:06:26,921 INFO 4191 has been selected by default
+2011-08-24 15:06:32,125 INFO executing method select_feature_qty parameters ['3889', '1']
+2011-08-24 15:06:32,155 INFO 3889 has been selected by default
+2011-08-24 15:06:37,375 INFO executing method click_feature parameters ['5977']
+2011-08-24 15:06:48,108 INFO executing method verify_oc_present parameters ['SAS hard disk drive']
+2011-08-24 15:06:53,155 INFO executing method verify_oc_present parameters ['SATA hard disk drive']
+2011-08-24 15:06:58,203 INFO executing method verify_feature_code_absent parameters ['3745', 'Primary array hard disk drives']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:07:11,733 INFO Running test case c:\selectica\testcases\7145MT\testcase5d.csv
+2011-08-24 15:07:11,733 INFO executing method start_testing parameters ['7145AC1']
+2011-08-24 15:07:50,687 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-08-24 15:07:50,687 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-08-24 15:07:55,687 INFO executing method select_feature_qty parameters ['3873', '1']
+2011-08-24 15:07:55,703 INFO 3873 has been selected by default
+2011-08-24 15:08:11,000 INFO executing method select_feature_qty parameters ['4191', '1']
+2011-08-24 15:08:11,015 INFO 4191 has been selected by default
+2011-08-24 15:08:16,092 INFO executing method select_feature_qty parameters ['3876', '1']
+2011-08-24 15:08:16,108 INFO 3876 has been selected by default
+2011-08-24 15:08:21,280 INFO executing method click_feature parameters ['5977']
+2011-08-24 15:08:27,046 INFO executing method verify_oc_present parameters ['SAS hard disk drive']
+2011-08-24 15:08:32,092 INFO executing method verify_oc_present parameters ['SATA hard disk drive']
+2011-08-24 15:08:37,125 INFO executing method verify_feature_code_absent parameters ['3745', 'Primary array hard disk drives']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:08:58,937 INFO Running test case c:\selectica\testcases\7145MT\testcase6a.csv
+2011-08-24 15:08:58,937 INFO executing method start_testing parameters ['7145AC1']
+2011-08-24 15:09:26,500 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-08-24 15:09:26,500 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-08-24 15:09:31,515 INFO executing method select_feature_qty parameters ['3873', '1']
+2011-08-24 15:09:31,546 INFO 3873 has been selected by default
+2011-08-24 15:09:46,842 INFO executing method select_feature_qty parameters ['4191', '1']
+2011-08-24 15:09:46,875 INFO 4191 has been selected by default
+2011-08-24 15:09:52,015 INFO executing method select_feature_qty parameters ['93', '1']
+2011-08-24 15:09:52,046 INFO 93 has been selected by default
+2011-08-24 15:09:57,265 INFO executing method click_feature parameters ['5977']
+2011-08-24 15:10:03,046 INFO executing method verify_oc_present parameters ['SAS hard disk drive']
+2011-08-24 15:10:08,078 INFO executing method verify_oc_present parameters ['SATA hard disk drive']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:10:25,717 INFO Running test case c:\selectica\testcases\7145MT\testcase6b.csv
+2011-08-24 15:10:25,717 INFO executing method start_testing parameters ['7145AC1']
+2011-08-24 15:11:09,015 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-08-24 15:11:09,015 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-08-24 15:11:14,046 INFO executing method select_feature_qty parameters ['3873', '1']
+2011-08-24 15:11:14,062 INFO 3873 has been selected by default
+2011-08-24 15:11:39,483 INFO executing method select_feature_qty parameters ['4191', '1']
+2011-08-24 15:11:39,500 INFO 4191 has been selected by default
+2011-08-24 15:11:44,671 INFO executing method select_feature_qty parameters ['93', '1']
+2011-08-24 15:11:44,703 INFO 93 has been selected by default
+2011-08-24 15:11:49,890 INFO executing method click_feature parameters ['5977']
+2011-08-24 15:12:00,562 INFO executing method verify_oc_present parameters ['SAS hard disk drive']
+2011-08-24 15:12:05,592 INFO executing method verify_oc_present parameters ['SATA hard disk drive']
+ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 624.500s
+
+OK
+2011-08-24 15:12:12,296 INFO Running test suite: c:\selectica\testcases\Megalon 7147\HDD\HDD Qty
+runTest (TestContent.TestContent) ... 2011-08-24 15:12:32,187 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_None.csv
+2011-08-24 15:12:32,203 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:15:59,312 INFO executing method title parameters ['Verify Secondary Array - None ']
+2011-08-24 15:15:59,312 INFO Test Case: Verify Secondary Array - None 
+2011-08-24 15:16:04,342 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:16:04,358 INFO 1790 has been selected by default
+2011-08-24 15:16:19,655 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:16:19,671 INFO 9281 has been selected by default
+2011-08-24 15:16:26,328 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:16:32,217 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:16:32,233 INFO 0095 has been selected by default
+2011-08-24 15:16:37,296 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:16:37,312 INFO 0093 has been selected by default
+2011-08-24 15:16:42,453 INFO executing method select_none parameters ['Secondary array']
+2011-08-24 15:16:48,046 INFO executing method select_feature_qty parameters ['5522', '0']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:17:12,062 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_NoRAID.csv
+2011-08-24 15:17:12,092 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:17:48,500 INFO executing method title parameters ['Backplane: No RAID - Verify # of HDD']
+2011-08-24 15:17:48,500 INFO Test Case: Backplane: No RAID - Verify # of HDD
+2011-08-24 15:17:53,515 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:17:53,530 INFO 1790 has been selected by default
+2011-08-24 15:17:59,187 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:17:59,203 INFO 9281 has been selected by default
+2011-08-24 15:18:04,265 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:18:09,921 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:18:09,953 INFO 0095 has been selected by default
+2011-08-24 15:18:15,078 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:18:15,092 INFO 0093 has been selected by default
+2011-08-24 15:18:20,280 INFO executing method click_feature parameters ['3270', 'Primary array']
+2011-08-24 15:18:25,953 INFO executing method select_feature_qty parameters ['5522', '0']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:18:36,562 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_NoRAID_3271_SA.csv
+2011-08-24 15:18:36,608 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:19:11,078 INFO executing method title parameters ['Verify No RAID - Secondary Array set up by customer (3271)']
+2011-08-24 15:19:11,078 INFO Test Case: Verify No RAID - Secondary Array set up by customer (3271)
+2011-08-24 15:19:16,108 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:19:16,125 INFO 1790 has been selected by default
+2011-08-24 15:19:21,390 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:19:21,421 INFO 9281 has been selected by default
+2011-08-24 15:19:26,578 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:19:32,155 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:19:32,171 INFO 0095 has been selected by default
+2011-08-24 15:19:37,342 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:19:37,358 INFO 0093 has been selected by default
+2011-08-24 15:19:42,500 INFO executing method click_feature parameters ['3271', 'Secondary array']
+2011-08-24 15:19:48,265 INFO executing method select_feature_qty parameters ['5522', '0']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:20:08,890 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID0_SAS.csv
+2011-08-24 15:20:08,905 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:21:00,515 INFO executing method title parameters ['Backplane: RAID 0 - Primary Array (SAS) - minimum of 2 HDDs required (8141)']
+2011-08-24 15:21:00,515 INFO Test Case: Backplane: RAID 0 - Primary Array (SAS) - minimum of 2 HDDs required (8141)
+2011-08-24 15:21:05,546 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:21:05,562 INFO 1790 has been selected by default
+2011-08-24 15:21:10,858 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:21:10,890 INFO 9281 has been selected by default
+2011-08-24 15:21:16,000 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:21:21,592 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:21:21,608 INFO 0095 has been selected by default
+2011-08-24 15:21:26,733 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:21:26,765 INFO 0093 has been selected by default
+2011-08-24 15:21:31,921 INFO executing method click_feature parameters ['8141', 'Primary array']
+2011-08-24 15:21:37,592 INFO executing method select_feature_qty parameters ['5522', '0']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:21:57,717 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID0_SATA.csv
+2011-08-24 15:21:57,717 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:22:32,796 INFO executing method title parameters ['RAID 0 - Primary Array (SATA) - minimum of 2 HDDs required (8135)']
+2011-08-24 15:22:32,796 INFO Test Case: RAID 0 - Primary Array (SATA) - minimum of 2 HDDs required (8135)
+2011-08-24 15:22:37,828 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:22:37,842 INFO 1790 has been selected by default
+2011-08-24 15:22:48,812 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:22:48,828 INFO 9281 has been selected by default
+2011-08-24 15:22:54,092 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:22:59,733 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:22:59,750 INFO 0095 has been selected by default
+2011-08-24 15:23:04,890 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:23:04,905 INFO 0093 has been selected by default
+2011-08-24 15:23:10,078 INFO executing method click_feature parameters ['8135', 'Primary array']
+2011-08-24 15:23:15,750 INFO executing method select_feature_qty parameters ['A1NX', '0']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:23:30,217 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID0_SSD_SA.csv
+2011-08-24 15:23:30,217 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:24:17,515 INFO executing method title parameters ['Verify RAID 0 - Secondary Array (SSD) - minimum of 2 SSDs required (A1P5)']
+2011-08-24 15:24:17,515 INFO Test Case: Verify RAID 0 - Secondary Array (SSD) - minimum of 2 SSDs required (A1P5)
+2011-08-24 15:24:22,546 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:24:22,562 INFO 1790 has been selected by default
+2011-08-24 15:24:27,828 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:24:27,858 INFO 9281 has been selected by default
+2011-08-24 15:24:33,015 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:24:38,592 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:24:38,625 INFO 0095 has been selected by default
+2011-08-24 15:24:43,780 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:24:43,796 INFO 0093 has been selected by default
+2011-08-24 15:24:48,967 INFO executing method click_feature parameters ['A1P5', 'Secondary array']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:25:08,217 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID1_SAS.csv
+2011-08-24 15:25:08,250 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:26:06,375 INFO executing method title parameters ['Backplane: RAID 1 - Primary Array (SAS) - 2 HDDs required (8142)']
+2011-08-24 15:26:06,375 INFO Test Case: Backplane: RAID 1 - Primary Array (SAS) - 2 HDDs required (8142)
+2011-08-24 15:26:11,405 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:26:11,421 INFO 1790 has been selected by default
+2011-08-24 15:26:26,703 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:26:26,733 INFO 9281 has been selected by default
+2011-08-24 15:26:31,875 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:26:42,592 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:26:42,625 INFO 0095 has been selected by default
+2011-08-24 15:26:47,812 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:26:47,842 INFO 0093 has been selected by default
+2011-08-24 15:26:53,000 INFO executing method click_feature parameters ['8142', 'Primary array']
+2011-08-24 15:26:58,733 INFO executing method select_feature_qty parameters ['5522', '0']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:27:36,030 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID1_SATA.csv
+2011-08-24 15:27:36,030 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:28:03,125 INFO executing method title parameters ['Backplane:RAID 1 - Primary Array (SATA) - 2 HDDs required (8136)']
+2011-08-24 15:28:03,140 INFO Test Case: Backplane:RAID 1 - Primary Array (SATA) - 2 HDDs required (8136)
+2011-08-24 15:28:08,155 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:28:08,171 INFO 1790 has been selected by default
+2011-08-24 15:28:13,437 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:28:13,467 INFO 9281 has been selected by default
+2011-08-24 15:28:18,640 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:28:24,203 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:28:24,203 INFO 0095 has been selected by default
+2011-08-24 15:28:29,280 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:28:29,280 INFO 0093 has been selected by default
+2011-08-24 15:28:34,375 INFO executing method click_feature parameters ['8136', 'Primary array']
+2011-08-24 15:28:40,078 INFO executing method select_feature_qty parameters ['A1NX', '0']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:28:46,828 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID1_SSD.csv
+2011-08-24 15:28:46,828 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:29:10,250 INFO executing method title parameters ['Verify RAID 1 - Secondary Array (SSD) - 2 SSDs required (5981)']
+2011-08-24 15:29:10,250 INFO Test Case: Verify RAID 1 - Secondary Array (SSD) - 2 SSDs required (5981)
+2011-08-24 15:29:15,265 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:29:15,280 INFO 1790 has been selected by default
+2011-08-24 15:29:20,546 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:29:20,546 INFO 9281 has been selected by default
+2011-08-24 15:29:25,655 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:29:31,233 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:29:31,265 INFO 0095 has been selected by default
+2011-08-24 15:29:36,421 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:29:36,453 INFO 0093 has been selected by default
+2011-08-24 15:29:41,608 INFO executing method click_feature parameters ['5981', 'Secondary array']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:29:46,640 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID5_SAS.csv
+2011-08-24 15:29:46,655 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:30:15,562 INFO executing method title parameters ['Backplane: RAID 5 - Primary Array (SAS) - minimum of 3 HDDs required (7853)']
+2011-08-24 15:30:15,562 INFO Test Case: Backplane: RAID 5 - Primary Array (SAS) - minimum of 3 HDDs required (7853)
+2011-08-24 15:30:20,578 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:30:20,578 INFO 1790 has been selected by default
+2011-08-24 15:30:25,765 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:30:25,765 INFO 9281 has been selected by default
+2011-08-24 15:30:30,858 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:30:36,405 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:30:36,421 INFO 0095 has been selected by default
+2011-08-24 15:30:41,515 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:30:41,530 INFO 0093 has been selected by default
+2011-08-24 15:30:46,640 INFO executing method click_feature parameters ['7853', 'Primary array']
+2011-08-24 15:30:52,312 INFO executing method select_feature_qty parameters ['5522', '0']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:31:03,671 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID5_SATA.csv
+2011-08-24 15:31:03,671 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:31:28,655 INFO executing method title parameters ['RAID 5 - Primary Array (SATA) - minimum of 3 HDDs required (7851)']
+2011-08-24 15:31:28,655 INFO Test Case: RAID 5 - Primary Array (SATA) - minimum of 3 HDDs required (7851)
+2011-08-24 15:31:33,687 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:31:33,703 INFO 1790 has been selected by default
+2011-08-24 15:31:48,967 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:31:49,015 INFO 9281 has been selected by default
+2011-08-24 15:31:54,233 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:32:04,812 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:32:04,828 INFO 0095 has been selected by default
+2011-08-24 15:32:10,000 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:32:10,015 INFO 0093 has been selected by default
+2011-08-24 15:32:15,171 INFO executing method click_feature parameters ['7851', 'Primary array']
+2011-08-24 15:32:20,890 INFO executing method select_feature_qty parameters ['A1NX', '0']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:32:40,155 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID5_SSD.csv
+2011-08-24 15:32:40,155 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:33:06,625 INFO executing method title parameters ['Verify RAID 5 - Secondary Array (SSD) - minimum of 3 SSDs required (6472)']
+2011-08-24 15:33:06,625 INFO Test Case: Verify RAID 5 - Secondary Array (SSD) - minimum of 3 SSDs required (6472)
+2011-08-24 15:33:11,655 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:33:11,671 INFO 1790 has been selected by default
+2011-08-24 15:33:16,983 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:33:17,000 INFO 9281 has been selected by default
+2011-08-24 15:33:22,125 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:33:27,640 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:33:27,655 INFO 0095 has been selected by default
+2011-08-24 15:33:32,828 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:33:34,875 INFO 0093 has been selected by default
+2011-08-24 15:33:39,953 INFO executing method click_feature parameters ['6472', 'Secondary array']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:34:19,780 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID6_SAS.csv
+2011-08-24 15:34:19,812 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:34:43,328 INFO executing method title parameters ['RAID 6 - Primary Array (SAS) - minimum of 4 HDDs required (7857)']
+2011-08-24 15:34:43,328 INFO Test Case: RAID 6 - Primary Array (SAS) - minimum of 4 HDDs required (7857)
+2011-08-24 15:34:48,342 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:34:48,342 INFO 1790 has been selected by default
+2011-08-24 15:34:53,530 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:34:53,562 INFO 9281 has been selected by default
+2011-08-24 15:34:58,733 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:35:04,312 INFO executing method select_feature_qty parameters ['3877', '1']
+2011-08-24 15:35:04,328 INFO 3877 has been selected by default
+2011-08-24 15:35:09,453 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:35:09,483 INFO 0093 has been selected by default
+2011-08-24 15:35:14,640 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 15:35:14,671 INFO 0095 has been selected by default
+2011-08-24 15:35:24,905 INFO executing method click_feature parameters ['7857', 'Primary array']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 15:35:51,092 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\HDD Qty\QtyHDD_RAID6_SATA.csv
+2011-08-24 15:35:51,092 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:36:17,828 INFO executing method title parameters ['RAID 6 - Primary Array (SATA) - minimum of 4 HDDs required (7855)']
+2011-08-24 15:36:17,828 INFO Test Case: RAID 6 - Primary Array (SATA) - minimum of 4 HDDs required (7855)
+2011-08-24 15:36:22,842 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:36:22,858 INFO 1790 has been selected by default
+2011-08-24 15:36:28,421 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:36:28,437 INFO 9281 has been selected by default
+2011-08-24 15:36:33,655 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:36:39,280 INFO executing method select_feature_qty parameters ['3877', '1']
+2011-08-24 15:36:39,280 INFO 3877 has been selected by default
+2011-08-24 15:36:44,375 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:36:44,390 INFO 0093 has been selected by default
+2011-08-24 15:36:49,530 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 15:36:49,562 INFO 0095 has been selected by default
+2011-08-24 15:36:59,796 INFO executing method click_feature parameters ['7855', 'Primary array']
+ERROR
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 115, in select_feature_qty
+    test_client.click()
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 45, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 183, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 115, in select_feature_qty
+    test_client.click()
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 45, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 183, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 115, in select_feature_qty
+    test_client.click()
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 45, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 183, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 115, in select_feature_qty
+    test_client.click()
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 45, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 183, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 115, in select_feature_qty
+    test_client.click()
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 45, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 183, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 98, in click_feature
+    test_client = self.driver.find_element_by_xpath("//span[contains(.,'%s')]/parent::*/parent::*/parent::*//.[contains(@value,'%s')]" % (group, feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//span[contains(.,\'Secondary array\')]/parent::*/parent::*/parent::*//.[contains(@value,\'A1P5\')]"}' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 115, in select_feature_qty
+    test_client.click()
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 45, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 183, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 115, in select_feature_qty
+    test_client.click()
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 45, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 183, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 98, in click_feature
+    test_client = self.driver.find_element_by_xpath("//span[contains(.,'%s')]/parent::*/parent::*/parent::*//.[contains(@value,'%s')]" % (group, feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//span[contains(.,\'Secondary array\')]/parent::*/parent::*/parent::*//.[contains(@value,\'5981\')]"}' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 115, in select_feature_qty
+    test_client.click()
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 45, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 183, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 115, in select_feature_qty
+    test_client.click()
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 45, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webelement.py", line 183, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+ElementNotVisibleException: Message: u'Element is not currently visible and so may not be interacted with' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 98, in click_feature
+    test_client = self.driver.find_element_by_xpath("//span[contains(.,'%s')]/parent::*/parent::*/parent::*//.[contains(@value,'%s')]" % (group, feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//span[contains(.,\'Secondary array\')]/parent::*/parent::*/parent::*//.[contains(@value,\'6472\')]"}' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 98, in click_feature
+    test_client = self.driver.find_element_by_xpath("//span[contains(.,'%s')]/parent::*/parent::*/parent::*//.[contains(@value,'%s')]" % (group, feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//span[contains(.,\'Primary array\')]/parent::*/parent::*/parent::*//.[contains(@value,\'7857\')]"}' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 98, in click_feature
+    test_client = self.driver.find_element_by_xpath("//span[contains(.,'%s')]/parent::*/parent::*/parent::*//.[contains(@value,'%s')]" % (group, feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//span[contains(.,\'Primary array\')]/parent::*/parent::*/parent::*//.[contains(@value,\'7855\')]"}' 
+
+----------------------------------------------------------------------
+Ran 14 tests in 1489.141s
+
+FAILED (errors=14)
+2011-08-24 15:37:01,530 INFO Running test suite: c:\selectica\testcases\Megalon 7147\HDD\RAID_PrimaryArray
+runTest (TestContent.TestContent) ... 2011-08-24 15:37:09,546 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_PrimaryArray\HDD_NoRAID_3270.csv
+2011-08-24 15:37:09,640 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:37:42,250 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify No RAID - Primary Array set up by customer (3270)']
+2011-08-24 15:37:42,250 INFO Test Case: Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify No RAID - Primary Array set up by customer (3270)
+2011-08-24 15:37:47,328 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:37:47,342 INFO 1790 has been selected by default
+2011-08-24 15:37:52,515 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:37:52,515 INFO 9281 has been selected by default
+2011-08-24 15:37:57,608 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:38:03,203 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:38:03,217 INFO 0095 has been selected by default
+2011-08-24 15:38:08,358 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:38:08,375 INFO 0093 has been selected by default
+2011-08-24 15:38:13,530 INFO executing method click_feature parameters ['3270', 'Primary array']
+2011-08-24 15:38:19,250 INFO executing method verify_feature_code_present parameters ['5522', 'Primary array hard disk drives']
+2011-08-24 15:38:24,296 INFO executing method verify_feature_code_present parameters ['5537', 'Primary array hard disk drives']
+2011-08-24 15:38:29,312 INFO executing method verify_feature_code_present parameters ['5536', 'Primary array hard disk drives']
+2011-08-24 15:38:34,342 INFO executing method verify_feature_code_present parameters ['5599', 'Primary array hard disk drives']
+2011-08-24 15:38:39,390 INFO executing method verify_feature_code_present parameters ['A283', 'Primary array hard disk drives']
+2011-08-24 15:38:44,421 INFO executing method verify_feature_code_present parameters ['5409', 'Primary array hard disk drives']
+2011-08-24 15:38:49,467 INFO executing method verify_feature_code_present parameters ['5433', 'Primary array hard disk drives']
+2011-08-24 15:38:54,500 INFO executing method verify_feature_code_present parameters ['A282', 'Primary array hard disk drives']
+2011-08-24 15:38:59,546 INFO executing method verify_feature_code_present parameters ['A1P3', 'Primary array hard disk drives']
+2011-08-24 15:39:04,592 INFO executing method verify_feature_code_present parameters ['5412', 'Primary array hard disk drives']
+2011-08-24 15:39:09,640 INFO executing method verify_feature_code_present parameters ['5413', 'Primary array hard disk drives']
+2011-08-24 15:39:15,342 INFO executing method verify_feature_code_present parameters ['A1NX', 'Primary array hard disk drives']
+2011-08-24 15:39:20,437 INFO executing method verify_feature_code_present parameters ['A1NZ', 'Primary array hard disk drives']
+2011-08-24 15:39:25,467 INFO executing method verify_feature_code_present parameters ['A1AV', 'Primary array hard disk drives']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:39:42,655 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_PrimaryArray\HDD_SAS_7853.csv
+2011-08-24 15:39:42,671 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:40:04,280 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify RAID 5 - Primary Array (SAS) - minimum of 3 HDDs required (7853)']
+2011-08-24 15:40:04,280 INFO Test Case: Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify RAID 5 - Primary Array (SAS) - minimum of 3 HDDs required (7853)
+2011-08-24 15:40:09,296 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:40:09,312 INFO 1790 has been selected by default
+2011-08-24 15:40:14,592 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:40:14,608 INFO 9281 has been selected by default
+2011-08-24 15:40:19,780 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:40:25,375 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:40:25,405 INFO 0095 has been selected by default
+2011-08-24 15:40:30,500 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:40:30,530 INFO 0093 has been selected by default
+2011-08-24 15:40:35,733 INFO executing method click_feature parameters ['7853', 'Primary array']
+2011-08-24 15:40:41,421 INFO executing method verify_feature_code_present parameters ['5522', 'Primary array hard disk drives']
+2011-08-24 15:40:46,453 INFO executing method verify_feature_code_present parameters ['5537', 'Primary array hard disk drives']
+2011-08-24 15:40:51,500 INFO executing method verify_feature_code_present parameters ['5536', 'Primary array hard disk drives']
+2011-08-24 15:40:56,546 INFO executing method verify_feature_code_present parameters ['5599', 'Primary array hard disk drives']
+2011-08-24 15:41:01,578 INFO executing method verify_feature_code_present parameters ['A283', 'Primary array hard disk drives']
+2011-08-24 15:41:06,608 INFO executing method verify_feature_code_present parameters ['5409', 'Primary array hard disk drives']
+2011-08-24 15:41:11,640 INFO executing method verify_feature_code_present parameters ['5433', 'Primary array hard disk drives']
+2011-08-24 15:41:16,687 INFO executing method verify_feature_code_present parameters ['A282', 'Primary array hard disk drives']
+2011-08-24 15:41:21,733 INFO executing method verify_feature_code_present parameters ['A1P3', 'Primary array hard disk drives']
+2011-08-24 15:41:26,765 INFO executing method verify_feature_code_absent parameters ['5412', 'Primary array hard disk drives']
+2011-08-24 15:41:31,828 INFO executing method verify_feature_code_absent parameters ['5413', 'Primary array hard disk drives']
+2011-08-24 15:41:36,875 INFO executing method verify_feature_code_absent parameters ['A1NX', 'Primary array hard disk drives']
+2011-08-24 15:41:41,905 INFO executing method verify_feature_code_absent parameters ['A1NZ', 'Primary array hard disk drives']
+2011-08-24 15:41:46,953 INFO executing method verify_feature_code_absent parameters ['A1AV', 'Primary array hard disk drives']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:42:01,733 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_PrimaryArray\HDD_SAS_8141.csv
+2011-08-24 15:42:01,750 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:42:25,312 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify RAID 0 - Primary Array (SAS) - minimum of 2 HDDs required (8141)']
+2011-08-24 15:42:25,312 INFO Test Case: Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify RAID 0 - Primary Array (SAS) - minimum of 2 HDDs required (8141)
+2011-08-24 15:42:30,328 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:42:30,358 INFO 1790 has been selected by default
+2011-08-24 15:42:35,608 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:42:35,625 INFO 9281 has been selected by default
+2011-08-24 15:42:40,780 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:42:46,342 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:42:46,375 INFO 0095 has been selected by default
+2011-08-24 15:42:51,546 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:42:51,562 INFO 0093 has been selected by default
+2011-08-24 15:42:56,703 INFO executing method click_feature parameters ['8141', 'Primary array']
+2011-08-24 15:43:02,405 INFO executing method verify_feature_code_present parameters ['5522', 'Primary array hard disk drives']
+2011-08-24 15:43:07,437 INFO executing method verify_feature_code_present parameters ['5537', 'Primary array hard disk drives']
+2011-08-24 15:43:12,483 INFO executing method verify_feature_code_present parameters ['5536', 'Primary array hard disk drives']
+2011-08-24 15:43:17,515 INFO executing method verify_feature_code_present parameters ['5599', 'Primary array hard disk drives']
+2011-08-24 15:43:22,562 INFO executing method verify_feature_code_present parameters ['A283', 'Primary array hard disk drives']
+2011-08-24 15:43:27,592 INFO executing method verify_feature_code_present parameters ['5409', 'Primary array hard disk drives']
+2011-08-24 15:43:32,608 INFO executing method verify_feature_code_present parameters ['5433', 'Primary array hard disk drives']
+2011-08-24 15:43:37,655 INFO executing method verify_feature_code_present parameters ['A282', 'Primary array hard disk drives']
+2011-08-24 15:43:42,703 INFO executing method verify_feature_code_present parameters ['A1P3', 'Primary array hard disk drives']
+2011-08-24 15:43:47,733 INFO executing method verify_feature_code_absent parameters ['A1NX', 'Primary array hard disk drives']
+2011-08-24 15:43:52,780 INFO executing method verify_feature_code_absent parameters ['A1NZ', 'Primary array hard disk drives']
+2011-08-24 15:43:57,812 INFO executing method verify_feature_code_absent parameters ['A1AV', 'Primary array hard disk drives']
+2011-08-24 15:44:02,828 INFO executing method verify_feature_code_absent parameters ['5412', 'Primary array hard disk drives']
+2011-08-24 15:44:07,842 INFO executing method verify_feature_code_absent parameters ['5413', 'Primary array hard disk drives']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:44:23,546 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_PrimaryArray\HDD_SAS_8142.csv
+2011-08-24 15:44:23,578 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:44:50,140 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify HDDS for RAID 1 - Primary Array (SAS) - 2 HDDs required (8142) ']
+2011-08-24 15:44:50,140 INFO Test Case: Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify HDDS for RAID 1 - Primary Array (SAS) - 2 HDDs required (8142) 
+2011-08-24 15:44:55,155 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:44:55,171 INFO 1790 has been selected by default
+2011-08-24 15:45:00,592 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:45:00,625 INFO 9281 has been selected by default
+2011-08-24 15:45:05,828 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:45:11,405 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:45:11,437 INFO 0095 has been selected by default
+2011-08-24 15:45:16,578 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:45:16,608 INFO 0093 has been selected by default
+2011-08-24 15:45:21,780 INFO executing method click_feature parameters ['8142', 'Primary array']
+2011-08-24 15:45:27,515 INFO executing method verify_feature_code_present parameters ['5522', 'Primary array hard disk drives']
+2011-08-24 15:45:32,546 INFO executing method verify_feature_code_present parameters ['5537', 'Primary array hard disk drives']
+2011-08-24 15:45:37,592 INFO executing method verify_feature_code_present parameters ['5536', 'Primary array hard disk drives']
+2011-08-24 15:45:42,625 INFO executing method verify_feature_code_present parameters ['5599', 'Primary array hard disk drives']
+2011-08-24 15:45:47,671 INFO executing method verify_feature_code_present parameters ['A283', 'Primary array hard disk drives']
+2011-08-24 15:45:52,717 INFO executing method verify_feature_code_present parameters ['5409', 'Primary array hard disk drives']
+2011-08-24 15:45:57,765 INFO executing method verify_feature_code_present parameters ['5433', 'Primary array hard disk drives']
+2011-08-24 15:46:02,796 INFO executing method verify_feature_code_present parameters ['A282', 'Primary array hard disk drives']
+2011-08-24 15:46:07,842 INFO executing method verify_feature_code_present parameters ['A1P3', 'Primary array hard disk drives']
+2011-08-24 15:46:12,875 INFO executing method verify_feature_code_absent parameters ['5412', 'Primary array hard disk drives']
+2011-08-24 15:46:17,905 INFO executing method verify_feature_code_absent parameters ['5413', 'Primary array hard disk drives']
+2011-08-24 15:46:22,921 INFO executing method verify_feature_code_absent parameters ['A1NX', 'Primary array hard disk drives']
+2011-08-24 15:46:27,967 INFO executing method verify_feature_code_absent parameters ['A1NZ', 'Primary array hard disk drives']
+2011-08-24 15:46:33,015 INFO executing method verify_feature_code_absent parameters ['A1AV', 'Primary array hard disk drives']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:46:44,967 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_PrimaryArray\HDD_SATA_7851.csv
+2011-08-24 15:46:44,983 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:47:07,717 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify RAID 5 - Primary Array (SATA) - minimum of 3 HDDs required (7851)']
+2011-08-24 15:47:07,717 INFO Test Case: Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify RAID 5 - Primary Array (SATA) - minimum of 3 HDDs required (7851)
+2011-08-24 15:47:12,750 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:47:12,780 INFO 1790 has been selected by default
+2011-08-24 15:47:23,092 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:47:23,125 INFO 9281 has been selected by default
+2011-08-24 15:47:28,250 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:47:33,828 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:47:33,858 INFO 0095 has been selected by default
+2011-08-24 15:47:39,030 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:47:39,046 INFO 0093 has been selected by default
+2011-08-24 15:47:44,203 INFO executing method click_feature parameters ['7851', 'Primary array']
+2011-08-24 15:47:49,937 INFO executing method verify_feature_code_absent parameters ['5522', 'Primary array hard disk drives']
+2011-08-24 15:47:54,983 INFO executing method verify_feature_code_absent parameters ['5537', 'Primary array hard disk drives']
+2011-08-24 15:48:00,030 INFO executing method verify_feature_code_absent parameters ['5536', 'Primary array hard disk drives']
+2011-08-24 15:48:05,078 INFO executing method verify_feature_code_absent parameters ['5599', 'Primary array hard disk drives']
+2011-08-24 15:48:10,125 INFO executing method verify_feature_code_absent parameters ['A283', 'Primary array hard disk drives']
+2011-08-24 15:48:15,155 INFO executing method verify_feature_code_absent parameters ['5409', 'Primary array hard disk drives']
+2011-08-24 15:48:20,203 INFO executing method verify_feature_code_absent parameters ['5433', 'Primary array hard disk drives']
+2011-08-24 15:48:25,250 INFO executing method verify_feature_code_absent parameters ['A282', 'Primary array hard disk drives']
+2011-08-24 15:48:30,280 INFO executing method verify_feature_code_absent parameters ['A1P3', 'Primary array hard disk drives']
+2011-08-24 15:48:35,312 INFO executing method verify_feature_code_absent parameters ['5412', 'Primary array hard disk drives']
+2011-08-24 15:48:40,358 INFO executing method verify_feature_code_absent parameters ['5413', 'Primary array hard disk drives']
+2011-08-24 15:48:45,405 INFO executing method verify_feature_code_present parameters ['A1NX', 'Primary array hard disk drives']
+2011-08-24 15:48:50,437 INFO executing method verify_feature_code_present parameters ['A1NZ', 'Primary array hard disk drives']
+2011-08-24 15:48:55,562 INFO executing method verify_feature_code_present parameters ['A1AV', 'Primary array hard disk drives']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:49:48,453 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_PrimaryArray\HDD_SATA_8135.csv
+2011-08-24 15:49:48,467 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:50:26,296 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify RAID 0 - Primary Array (SATA) - minimum of 2 HDDs required (8135)']
+2011-08-24 15:50:26,296 INFO Test Case: Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify RAID 0 - Primary Array (SATA) - minimum of 2 HDDs required (8135)
+2011-08-24 15:50:31,296 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:50:31,312 INFO 1790 has been selected by default
+2011-08-24 15:50:36,500 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:50:36,515 INFO 9281 has been selected by default
+2011-08-24 15:50:41,671 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:50:47,358 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:50:47,375 INFO 0095 has been selected by default
+2011-08-24 15:50:52,655 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:50:52,687 INFO 0093 has been selected by default
+2011-08-24 15:50:57,858 INFO executing method click_feature parameters ['8135', 'Primary array']
+2011-08-24 15:51:03,562 INFO executing method verify_feature_code_absent parameters ['5522', 'Primary array hard disk drives']
+2011-08-24 15:51:08,592 INFO executing method verify_feature_code_absent parameters ['5537', 'Primary array hard disk drives']
+2011-08-24 15:51:13,640 INFO executing method verify_feature_code_absent parameters ['5536', 'Primary array hard disk drives']
+2011-08-24 15:51:18,671 INFO executing method verify_feature_code_absent parameters ['5599', 'Primary array hard disk drives']
+2011-08-24 15:51:23,717 INFO executing method verify_feature_code_absent parameters ['A283', 'Primary array hard disk drives']
+2011-08-24 15:51:28,765 INFO executing method verify_feature_code_absent parameters ['5409', 'Primary array hard disk drives']
+2011-08-24 15:51:34,390 INFO executing method verify_feature_code_absent parameters ['5433', 'Primary array hard disk drives']
+2011-08-24 15:51:39,875 INFO executing method verify_feature_code_absent parameters ['A282', 'Primary array hard disk drives']
+2011-08-24 15:51:44,921 INFO executing method verify_feature_code_absent parameters ['A1P3', 'Primary array hard disk drives']
+2011-08-24 15:51:49,953 INFO executing method verify_feature_code_absent parameters ['5412', 'Primary array hard disk drives']
+2011-08-24 15:51:55,000 INFO executing method verify_feature_code_absent parameters ['5413', 'Primary array hard disk drives']
+2011-08-24 15:52:00,046 INFO executing method verify_feature_code_present parameters ['A1NX', 'Primary array hard disk drives']
+2011-08-24 15:52:05,078 INFO executing method verify_feature_code_present parameters ['A1NZ', 'Primary array hard disk drives']
+2011-08-24 15:52:10,125 INFO executing method verify_feature_code_present parameters ['A1AV', 'Primary array hard disk drives']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 15:52:27,108 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_PrimaryArray\HDD_SATA_8136.csv
+2011-08-24 15:52:27,140 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:53:04,842 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify RAID 1 - Primary Array (SATA) - 2 HDDs required (8136)']
+2011-08-24 15:53:04,842 INFO Test Case: Backplane: 1790 + 9281 Controller: 0095 + 0093 Verify RAID 1 - Primary Array (SATA) - 2 HDDs required (8136)
+2011-08-24 15:53:09,858 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:53:09,875 INFO 1790 has been selected by default
+2011-08-24 15:53:20,155 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:53:20,171 INFO 9281 has been selected by default
+2011-08-24 15:53:25,328 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:53:30,953 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 15:53:30,983 INFO 0095 has been selected by default
+2011-08-24 15:53:36,108 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:53:36,140 INFO 0093 has been selected by default
+2011-08-24 15:53:41,280 INFO executing method click_feature parameters ['8136', 'Primary array']
+2011-08-24 15:53:47,062 INFO executing method verify_feature_code_absent parameters ['5522', 'Primary array hard disk drives']
+2011-08-24 15:53:52,092 INFO executing method verify_feature_code_absent parameters ['5537', 'Primary array hard disk drives']
+2011-08-24 15:53:57,140 INFO executing method verify_feature_code_absent parameters ['5536', 'Primary array hard disk drives']
+2011-08-24 15:54:02,171 INFO executing method verify_feature_code_absent parameters ['5599', 'Primary array hard disk drives']
+2011-08-24 15:54:07,217 INFO executing method verify_feature_code_absent parameters ['A283', 'Primary array hard disk drives']
+2011-08-24 15:54:12,265 INFO executing method verify_feature_code_absent parameters ['5409', 'Primary array hard disk drives']
+2011-08-24 15:54:17,312 INFO executing method verify_feature_code_absent parameters ['5433', 'Primary array hard disk drives']
+2011-08-24 15:54:22,342 INFO executing method verify_feature_code_absent parameters ['A282', 'Primary array hard disk drives']
+2011-08-24 15:54:27,390 INFO executing method verify_feature_code_absent parameters ['A1P3', 'Primary array hard disk drives']
+2011-08-24 15:54:32,421 INFO executing method verify_feature_code_absent parameters ['5412', 'Primary array hard disk drives']
+2011-08-24 15:54:37,453 INFO executing method verify_feature_code_absent parameters ['5413', 'Primary array hard disk drives']
+2011-08-24 15:54:42,483 INFO executing method verify_feature_code_present parameters ['A1NX', 'Primary array hard disk drives']
+2011-08-24 15:54:47,515 INFO executing method verify_feature_code_present parameters ['A1NZ', 'Primary array hard disk drives']
+2011-08-24 15:54:52,530 INFO executing method verify_feature_code_present parameters ['A1AV', 'Primary array hard disk drives']
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 1077.375s
+
+OK
+2011-08-24 15:54:58,937 INFO Running test suite: c:\selectica\testcases\Megalon 7147\HDD\RAID_SecondaryArray
+runTest (TestContent.TestContent) ... 2011-08-24 15:55:13,858 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_SecondaryArray\HDD_3271.csv
+2011-08-24 15:55:13,890 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:55:45,890 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0093 + 3889 Verify No RAID - Secondary Array set up by customer (3271)']
+2011-08-24 15:55:45,890 INFO Test Case: Backplane: 1790 + 9281 Controller: 0093 + 3889 Verify No RAID - Secondary Array set up by customer (3271)
+2011-08-24 15:55:50,921 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:55:50,937 INFO 1790 has been selected by default
+2011-08-24 15:55:56,187 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:55:56,217 INFO 9281 has been selected by default
+2011-08-24 15:56:01,328 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:56:06,858 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:56:06,890 INFO 0093 has been selected by default
+2011-08-24 15:56:12,046 INFO executing method select_feature_qty parameters ['3889', '1']
+2011-08-24 15:56:12,078 INFO 3889 has been selected by default
+2011-08-24 15:56:17,217 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 15:56:17,250 INFO 0095 has been selected by default
+2011-08-24 15:56:22,467 INFO executing method click_feature parameters ['3271', 'Secondary array']
+2011-08-24 15:56:28,140 INFO executing method verify_feature_code_absent parameters ['None', 'Secondary array hard disk drives']
+2011-08-24 15:56:33,171 INFO executing method verify_feature_code_present parameters ['5522', 'Secondary array hard disk drives']
+2011-08-24 15:56:38,187 INFO executing method verify_feature_code_present parameters ['5537', 'Secondary array hard disk drives']
+2011-08-24 15:56:43,203 INFO executing method verify_feature_code_present parameters ['5536', 'Secondary array hard disk drives']
+2011-08-24 15:56:48,233 INFO executing method verify_feature_code_present parameters ['5412', 'Secondary array hard disk drives']
+2011-08-24 15:56:53,280 INFO executing method verify_feature_code_present parameters ['5599', 'Secondary array hard disk drives']
+2011-08-24 15:56:58,312 INFO executing method verify_feature_code_present parameters ['5413', 'Secondary array hard disk drives']
+2011-08-24 15:57:03,358 INFO executing method verify_feature_code_present parameters ['A283', 'Secondary array hard disk drives']
+2011-08-24 15:57:08,405 INFO executing method verify_feature_code_present parameters ['5409', 'Secondary array hard disk drives']
+2011-08-24 15:57:13,437 INFO executing method verify_feature_code_present parameters ['5433', 'Secondary array hard disk drives']
+2011-08-24 15:57:18,515 INFO executing method verify_feature_code_present parameters ['A282', 'Secondary array hard disk drives']
+2011-08-24 15:57:23,578 INFO executing method verify_feature_code_present parameters ['A1P3', 'Secondary array hard disk drives']
+2011-08-24 15:57:28,608 INFO executing method verify_feature_code_present parameters ['A1NX', 'Secondary array hard disk drives']
+2011-08-24 15:57:33,655 INFO executing method verify_feature_code_present parameters ['A1NZ', 'Secondary array hard disk drives']
+2011-08-24 15:57:38,703 INFO executing method verify_feature_code_present parameters ['A1AV', 'Secondary array hard disk drives']
+2011-08-24 15:57:43,733 INFO executing method verify_feature_code_present parameters ['5428', 'Secondary array hard disk drives']
+2011-08-24 15:57:43,765 ERROR 5428 is not present on UI page
+FAIL
+runTest (TestContent.TestContent) ... 2011-08-24 15:57:53,078 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_SecondaryArray\HDD_5981.csv
+2011-08-24 15:57:53,108 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 15:58:57,562 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0093 + 3889 Verify RAID 1 - Secondary Array (SSD) - 2 SSDs required (5981)']
+2011-08-24 15:58:57,562 INFO Test Case: Backplane: 1790 + 9281 Controller: 0093 + 3889 Verify RAID 1 - Secondary Array (SSD) - 2 SSDs required (5981)
+2011-08-24 15:59:02,578 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 15:59:02,578 INFO 1790 has been selected by default
+2011-08-24 15:59:18,328 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 15:59:18,342 INFO 9281 has been selected by default
+2011-08-24 15:59:25,796 INFO executing method click_feature parameters ['5978']
+2011-08-24 15:59:51,421 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 15:59:51,437 INFO 0093 has been selected by default
+2011-08-24 15:59:56,578 INFO executing method select_feature_qty parameters ['3889', '1']
+2011-08-24 15:59:56,608 INFO 3889 has been selected by default
+2011-08-24 16:00:01,750 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 16:00:01,765 INFO 0095 has been selected by default
+2011-08-24 16:00:07,000 INFO executing method click_feature parameters ['5981', 'Secondary array']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 16:00:26,717 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_SecondaryArray\HDD_6472.csv
+2011-08-24 16:00:26,733 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:00:56,578 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0093 + 3889 Verify RAID 5 - Secondary Array (SSD) - minimum of 3 SSDs required (6472)']
+2011-08-24 16:00:56,578 INFO Test Case: Backplane: 1790 + 9281 Controller: 0093 + 3889 Verify RAID 5 - Secondary Array (SSD) - minimum of 3 SSDs required (6472)
+2011-08-24 16:01:01,608 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:01:01,625 INFO 1790 has been selected by default
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 16:01:05,687 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_SecondaryArray\HDD_A1P5.csv
+2011-08-24 16:01:05,703 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:01:39,358 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0093 + 3889 Verify RAID 0 - Secondary Array (SSD) - minimum of 2 SSDs required (A1P5)']
+2011-08-24 16:01:39,358 INFO Test Case: Backplane: 1790 + 9281 Controller: 0093 + 3889 Verify RAID 0 - Secondary Array (SSD) - minimum of 2 SSDs required (A1P5)
+2011-08-24 16:01:44,390 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:01:44,405 INFO 1790 has been selected by default
+2011-08-24 16:01:49,671 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:01:49,703 INFO 9281 has been selected by default
+2011-08-24 16:01:54,812 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:02:00,390 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 16:02:00,405 INFO 0093 has been selected by default
+2011-08-24 16:02:05,500 INFO executing method select_feature_qty parameters ['3889', '1']
+2011-08-24 16:02:05,515 INFO 3889 has been selected by default
+2011-08-24 16:02:10,640 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 16:02:10,655 INFO 0095 has been selected by default
+2011-08-24 16:02:16,062 INFO executing method click_feature parameters ['A1P5', 'Secondary array']
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 16:02:29,000 INFO Running test case c:\selectica\testcases\Megalon 7147\HDD\RAID_SecondaryArray\HDD_None.csv
+2011-08-24 16:02:29,030 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:02:57,062 INFO executing method title parameters ['Backplane: 1790 + 9281 Controller: 0093 + 3889 Verify None in Secondary Array']
+2011-08-24 16:02:57,062 INFO Test Case: Backplane: 1790 + 9281 Controller: 0093 + 3889 Verify None in Secondary Array
+2011-08-24 16:03:02,092 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:03:02,108 INFO 1790 has been selected by default
+2011-08-24 16:03:07,358 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:03:07,390 INFO 9281 has been selected by default
+2011-08-24 16:03:12,515 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:03:18,030 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 16:03:18,062 INFO 0093 has been selected by default
+2011-08-24 16:03:23,203 INFO executing method select_feature_qty parameters ['3889', '1']
+2011-08-24 16:03:23,217 INFO 3889 has been selected by default
+2011-08-24 16:03:28,375 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 16:03:28,390 INFO 0095 has been selected by default
+2011-08-24 16:03:38,608 INFO executing method verify_feature_code_present parameters ['None', 'Secondary array']
+2011-08-24 16:03:38,640 ERROR None is not present on UI page
+FAIL
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 98, in click_feature
+    test_client = self.driver.find_element_by_xpath("//span[contains(.,'%s')]/parent::*/parent::*/parent::*//.[contains(@value,'%s')]" % (group, feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//span[contains(.,\'Secondary array\')]/parent::*/parent::*/parent::*//.[contains(@value,\'5981\')]"}' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 114, in select_feature_qty
+    test_client = self.driver.find_element_by_xpath("//input[contains(@value,'%s')]/parent::*/parent::*/parent::*//option[@value='%s']" % (feature_code, quantity))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,\'1790\')]/parent::*/parent::*/parent::*//option[@value=\'1\']"}' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 98, in click_feature
+    test_client = self.driver.find_element_by_xpath("//span[contains(.,'%s')]/parent::*/parent::*/parent::*//.[contains(@value,'%s')]" % (group, feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//span[contains(.,\'Secondary array\')]/parent::*/parent::*/parent::*//.[contains(@value,\'A1P5\')]"}' 
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\Megalon 7147\HDD\RAID_SecondaryArray\HDD_3271.csv
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\Megalon 7147\HDD\RAID_SecondaryArray\HDD_None.csv
+
+----------------------------------------------------------------------
+Ran 5 tests in 521.219s
+
+FAILED (failures=2, errors=3)
+2011-08-24 16:03:40,171 INFO Running test suite: c:\selectica\testcases\Megalon 7147\MI filter
+runTest (TestContent.TestContent) ... 2011-08-24 16:03:48,905 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0093_0093.csv
+2011-08-24 16:03:48,921 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:04:26,171 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:04:26,187 INFO 1790 has been selected by default
+2011-08-24 16:04:36,625 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:04:36,625 INFO 9281 has been selected by default
+2011-08-24 16:04:41,703 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:04:57,312 INFO executing method select_feature_qty parameters ['0093', '2']
+2011-08-24 16:04:57,328 INFO 0093 has been selected by default
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 16:05:21,578 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0093_3876.csv
+2011-08-24 16:05:21,592 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:05:51,312 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:05:51,328 INFO 1790 has been selected by default
+2011-08-24 16:06:01,858 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:06:01,890 INFO 9281 has been selected by default
+2011-08-24 16:06:07,140 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:06:12,703 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 16:06:12,717 INFO 0093 has been selected by default
+2011-08-24 16:06:17,858 INFO executing method select_feature_qty parameters ['3876', '1']
+2011-08-24 16:06:17,875 INFO 3876 has been selected by default
+2011-08-24 16:06:23,030 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 16:06:23,046 INFO 0095 has been selected by default
+2011-08-24 16:06:28,312 INFO executing method verify_feature_code_present parameters ['8142', 'Primary array']
+2011-08-24 16:06:33,342 INFO executing method verify_feature_code_present parameters ['8136', 'Primary array']
+2011-08-24 16:06:38,375 INFO executing method verify_feature_code_present parameters ['3270', 'Primary array']
+2011-08-24 16:06:43,405 INFO executing method verify_feature_code_present parameters ['8141', 'Primary array']
+2011-08-24 16:06:48,453 INFO executing method verify_feature_code_present parameters ['8135', 'Primary array']
+2011-08-24 16:06:53,483 INFO executing method verify_feature_code_present parameters ['7853', 'Primary array']
+2011-08-24 16:06:58,530 INFO executing method verify_feature_code_present parameters ['7851', 'Primary array']
+2011-08-24 16:07:03,562 INFO executing method verify_feature_code_present parameters ['7855', 'Primary array']
+2011-08-24 16:07:03,592 ERROR 7855 is not present on UI page
+FAIL
+runTest (TestContent.TestContent) ... 2011-08-24 16:07:14,703 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0093_3889.csv
+2011-08-24 16:07:14,717 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:07:43,342 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:07:43,342 INFO 1790 has been selected by default
+2011-08-24 16:07:48,515 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:07:48,530 INFO 9281 has been selected by default
+2011-08-24 16:07:53,625 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:07:59,140 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 16:07:59,155 INFO 0093 has been selected by default
+2011-08-24 16:08:04,233 INFO executing method select_feature_qty parameters ['3889', '1']
+2011-08-24 16:08:04,233 INFO 3889 has been selected by default
+2011-08-24 16:08:09,312 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 16:08:09,342 INFO 0095 has been selected by default
+2011-08-24 16:08:14,671 INFO executing method verify_feature_code_present parameters ['8142', 'Primary array']
+2011-08-24 16:08:19,717 INFO executing method verify_feature_code_present parameters ['8136', 'Primary array']
+2011-08-24 16:08:24,750 INFO executing method verify_feature_code_present parameters ['3270', 'Primary array']
+2011-08-24 16:08:29,796 INFO executing method verify_feature_code_present parameters ['8141', 'Primary array']
+2011-08-24 16:08:34,828 INFO executing method verify_feature_code_present parameters ['8135', 'Primary array']
+2011-08-24 16:08:39,858 INFO executing method verify_feature_code_present parameters ['7853', 'Primary array']
+2011-08-24 16:08:44,890 INFO executing method verify_feature_code_present parameters ['7851', 'Primary array']
+2011-08-24 16:08:49,905 INFO executing method verify_feature_code_present parameters ['7857', 'Primary array']
+2011-08-24 16:08:49,905 ERROR 7857 is not present on UI page
+FAIL
+runTest (TestContent.TestContent) ... 2011-08-24 16:08:59,717 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0095_0093.csv
+2011-08-24 16:08:59,733 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:09:25,078 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:09:25,108 INFO 1790 has been selected by default
+2011-08-24 16:09:30,375 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:09:30,405 INFO 9281 has been selected by default
+2011-08-24 16:09:35,562 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:09:41,187 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 16:09:41,203 INFO 0095 has been selected by default
+2011-08-24 16:09:46,280 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 16:09:46,296 INFO 0093 has been selected by default
+2011-08-24 16:09:51,390 INFO executing method verify_feature_code_present parameters ['8142', 'Primary array']
+2011-08-24 16:09:56,437 INFO executing method verify_feature_code_present parameters ['8136', 'Primary array']
+2011-08-24 16:10:01,483 INFO executing method verify_feature_code_present parameters ['3270', 'Primary array']
+2011-08-24 16:10:06,530 INFO executing method verify_feature_code_present parameters ['8141', 'Primary array']
+2011-08-24 16:10:11,578 INFO executing method verify_feature_code_present parameters ['8135', 'Primary array']
+2011-08-24 16:10:16,608 INFO executing method verify_feature_code_present parameters ['7853', 'Primary array']
+2011-08-24 16:10:21,655 INFO executing method verify_feature_code_present parameters ['7851', 'Primary array']
+2011-08-24 16:10:26,687 INFO executing method verify_feature_code_present parameters ['3271', 'Secondary array']
+2011-08-24 16:10:31,733 INFO executing method verify_feature_code_present parameters ['A1P5', 'Secondary array']
+2011-08-24 16:10:31,750 ERROR A1P5 is not present on UI page
+FAIL
+runTest (TestContent.TestContent) ... 2011-08-24 16:11:07,390 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0095_3876.csv
+2011-08-24 16:11:07,390 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:11:31,108 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:11:31,140 INFO 1790 has been selected by default
+2011-08-24 16:11:41,530 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:11:41,546 INFO 9281 has been selected by default
+2011-08-24 16:11:46,703 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:11:52,390 INFO executing method select_feature_qty parameters ['3876', '1']
+2011-08-24 16:11:52,405 INFO 3876 has been selected by default
+2011-08-24 16:11:57,515 INFO executing method verify_feature_code_present parameters ['8142', 'Primary array']
+2011-08-24 16:12:02,562 INFO executing method verify_feature_code_present parameters ['8136', 'Primary array']
+2011-08-24 16:12:07,592 INFO executing method verify_feature_code_present parameters ['3270', 'Primary array']
+2011-08-24 16:12:12,625 INFO executing method verify_feature_code_present parameters ['8141', 'Primary array']
+2011-08-24 16:12:17,640 INFO executing method verify_feature_code_present parameters ['8135', 'Primary array']
+2011-08-24 16:12:22,687 INFO executing method verify_feature_code_present parameters ['7853', 'Primary array']
+2011-08-24 16:12:27,717 INFO executing method verify_feature_code_present parameters ['7851', 'Primary array']
+2011-08-24 16:12:32,733 INFO executing method verify_feature_code_present parameters ['3271', 'Secondary array']
+ok
+runTest (TestContent.TestContent) ... 2011-08-24 16:12:47,765 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0095_3877.csv
+2011-08-24 16:12:47,780 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:13:25,921 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:13:25,953 INFO 1790 has been selected by default
+2011-08-24 16:13:31,217 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:13:31,233 INFO 9281 has been selected by default
+2011-08-24 16:13:36,467 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:13:42,062 INFO executing method select_feature_qty parameters ['0095', '1']
+2011-08-24 16:13:42,078 INFO 0095 has been selected by default
+2011-08-24 16:13:47,171 INFO executing method select_feature_qty parameters ['3887', '1']
+2011-08-24 16:13:47,203 INFO 3887 has been selected by default
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 16:13:55,875 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0095_3889.csv
+2011-08-24 16:13:55,890 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:14:40,328 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:14:40,342 INFO 1790 has been selected by default
+2011-08-24 16:14:45,530 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:14:45,546 INFO 9281 has been selected by default
+2011-08-24 16:14:50,750 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:14:56,265 INFO executing method select_feature_qty parameters ['3889', '1']
+2011-08-24 16:14:56,280 INFO 3889 has been selected by default
+2011-08-24 16:15:01,342 INFO executing method verify_feature_code_present parameters ['8142', 'Primary array']
+2011-08-24 16:15:06,375 INFO executing method verify_feature_code_present parameters ['8136', 'Primary array']
+2011-08-24 16:15:11,405 INFO executing method verify_feature_code_present parameters ['3270', 'Primary array']
+2011-08-24 16:15:16,453 INFO executing method verify_feature_code_present parameters ['8141', 'Primary array']
+2011-08-24 16:15:21,483 INFO executing method verify_feature_code_present parameters ['8135', 'Primary array']
+2011-08-24 16:15:26,546 INFO executing method verify_feature_code_present parameters ['7853', 'Primary array']
+2011-08-24 16:15:31,592 INFO executing method verify_feature_code_present parameters ['7851', 'Primary array']
+2011-08-24 16:15:36,640 INFO executing method verify_feature_code_present parameters ['3271', 'Secondary array']
+2011-08-24 16:15:41,671 INFO executing method verify_feature_code_present parameters ['A1P5', 'Secondary array']
+2011-08-24 16:15:41,703 ERROR A1P5 is not present on UI page
+FAIL
+runTest (TestContent.TestContent) ... 2011-08-24 16:16:41,140 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3876_3876.csv
+2011-08-24 16:16:41,140 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:17:19,250 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:17:19,296 INFO 1790 has been selected by default
+2011-08-24 16:17:29,625 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:17:29,640 INFO 9281 has been selected by default
+2011-08-24 16:17:34,796 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:17:40,265 INFO executing method select_feature_qty parameters ['3876', '2']
+2011-08-24 16:17:40,296 INFO 3876 has been selected by default
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 16:18:36,375 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3877_0093.csv
+2011-08-24 16:18:36,703 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:19:32,030 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:19:32,046 INFO 1790 has been selected by default
+2011-08-24 16:19:42,640 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:19:42,655 INFO 9281 has been selected by default
+2011-08-24 16:19:47,828 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:20:03,812 INFO executing method select_feature_qty parameters ['3877', '1']
+2011-08-24 16:20:03,828 INFO 3877 has been selected by default
+2011-08-24 16:20:08,983 INFO executing method select_feature_qty parameters ['0093', '1']
+2011-08-24 16:20:09,000 INFO 0093 has been selected by default
+2011-08-24 16:20:14,140 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 16:20:14,155 INFO 0095 has been selected by default
+2011-08-24 16:20:25,828 INFO executing method verify_feature_code_present parameters ['8142', 'Primary array']
+2011-08-24 16:20:32,342 INFO executing method verify_feature_code_present parameters ['8136', 'Primary array']
+2011-08-24 16:20:38,092 INFO executing method verify_feature_code_present parameters ['3270', 'Primary array']
+2011-08-24 16:20:46,530 INFO executing method verify_feature_code_present parameters ['8141', 'Primary array']
+2011-08-24 16:20:51,592 INFO executing method verify_feature_code_present parameters ['8135', 'Primary array']
+2011-08-24 16:20:57,500 INFO executing method verify_feature_code_present parameters ['7853', 'Primary array']
+2011-08-24 16:21:02,530 INFO executing method verify_feature_code_present parameters ['7851', 'Primary array']
+2011-08-24 16:21:08,733 INFO executing method verify_feature_code_present parameters ['7857', 'Primary array']
+2011-08-24 16:21:08,780 ERROR 7857 is not present on UI page
+FAIL
+runTest (TestContent.TestContent) ... 2011-08-24 16:21:48,765 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3877_3876.csv
+2011-08-24 16:21:48,796 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:22:34,655 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:22:34,671 INFO 1790 has been selected by default
+2011-08-24 16:22:40,640 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:22:40,655 INFO 9281 has been selected by default
+2011-08-24 16:22:45,812 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:22:51,483 INFO executing method select_feature_qty parameters ['3877', '1']
+2011-08-24 16:22:51,515 INFO 3877 has been selected by default
+2011-08-24 16:22:56,671 INFO executing method select_feature_qty parameters ['3876', '1']
+2011-08-24 16:22:56,703 INFO 3876 has been selected by default
+2011-08-24 16:23:01,858 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 16:23:01,875 INFO 0095 has been selected by default
+2011-08-24 16:23:07,125 INFO executing method verify_feature_code_present parameters ['8142', 'Primary array']
+2011-08-24 16:23:12,171 INFO executing method verify_feature_code_present parameters ['8136', 'Primary array']
+2011-08-24 16:23:17,217 INFO executing method verify_feature_code_present parameters ['3270', 'Primary array']
+2011-08-24 16:23:22,265 INFO executing method verify_feature_code_present parameters ['8141', 'Primary array']
+2011-08-24 16:23:27,296 INFO executing method verify_feature_code_present parameters ['8135', 'Primary array']
+2011-08-24 16:23:32,342 INFO executing method verify_feature_code_present parameters ['7853', 'Primary array']
+2011-08-24 16:23:37,390 INFO executing method verify_feature_code_present parameters ['7851', 'Primary array']
+2011-08-24 16:23:42,437 INFO executing method verify_feature_code_present parameters ['7855', 'Primary array']
+2011-08-24 16:23:42,467 ERROR 7855 is not present on UI page
+FAIL
+runTest (TestContent.TestContent) ... 2011-08-24 16:24:32,796 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3877_3877.csv
+2011-08-24 16:24:32,842 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:25:00,328 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:25:00,358 INFO 1790 has been selected by default
+2011-08-24 16:25:05,592 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:25:05,625 INFO 9281 has been selected by default
+2011-08-24 16:25:10,812 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:25:16,405 INFO executing method select_feature_qty parameters ['3887', '2']
+2011-08-24 16:25:16,421 INFO 3887 has been selected by default
+ERROR
+runTest (TestContent.TestContent) ... 2011-08-24 16:25:35,671 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3877_3889.csv
+2011-08-24 16:25:35,765 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:26:10,108 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:26:10,125 INFO 1790 has been selected by default
+2011-08-24 16:26:20,405 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:26:20,421 INFO 9281 has been selected by default
+2011-08-24 16:26:25,592 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:26:36,155 INFO executing method select_feature_qty parameters ['3877', '1']
+2011-08-24 16:26:36,155 INFO 3877 has been selected by default
+2011-08-24 16:26:41,328 INFO executing method select_feature_qty parameters ['3889', '1']
+2011-08-24 16:26:41,342 INFO 3889 has been selected by default
+2011-08-24 16:26:46,483 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 16:26:46,515 INFO 0095 has been selected by default
+2011-08-24 16:27:01,765 INFO executing method verify_feature_code_present parameters ['8142', 'Primary array']
+2011-08-24 16:27:06,828 INFO executing method verify_feature_code_present parameters ['8136', 'Primary array']
+2011-08-24 16:27:11,858 INFO executing method verify_feature_code_present parameters ['3270', 'Primary array']
+2011-08-24 16:27:20,703 INFO executing method verify_feature_code_present parameters ['8141', 'Primary array']
+2011-08-24 16:27:25,750 INFO executing method verify_feature_code_present parameters ['8135', 'Primary array']
+2011-08-24 16:27:30,780 INFO executing method verify_feature_code_present parameters ['7853', 'Primary array']
+2011-08-24 16:27:35,812 INFO executing method verify_feature_code_present parameters ['7851', 'Primary array']
+2011-08-24 16:27:41,453 INFO executing method verify_feature_code_present parameters ['7857', 'Primary array']
+2011-08-24 16:27:41,483 ERROR 7857 is not present on UI page
+FAIL
+runTest (TestContent.TestContent) ... 2011-08-24 16:27:56,937 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3889_3876.csv
+2011-08-24 16:27:56,937 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:28:21,467 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:28:21,483 INFO 1790 has been selected by default
+2011-08-24 16:28:26,733 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:28:26,765 INFO 9281 has been selected by default
+2011-08-24 16:28:31,875 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:28:37,421 INFO executing method select_feature_qty parameters ['3889', '1']
+2011-08-24 16:28:37,500 INFO 3889 has been selected by default
+2011-08-24 16:28:42,687 INFO executing method select_feature_qty parameters ['3876', '1']
+2011-08-24 16:28:42,703 INFO 3876 has been selected by default
+2011-08-24 16:28:47,890 INFO executing method select_feature_qty parameters ['0095', '0']
+2011-08-24 16:28:47,905 INFO 0095 has been selected by default
+2011-08-24 16:28:53,155 INFO executing method verify_feature_code_present parameters ['5979', 'Primary array']
+2011-08-24 16:28:53,171 ERROR 5979 is not present on UI page
+FAIL
+runTest (TestContent.TestContent) ... 2011-08-24 16:29:00,890 INFO Running test case c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3889_3889.csv
+2011-08-24 16:29:00,890 INFO executing method start_testing parameters ['7147AC1']
+2011-08-24 16:29:29,015 INFO executing method select_feature_qty parameters ['1790', '1']
+2011-08-24 16:29:29,030 INFO 1790 has been selected by default
+2011-08-24 16:29:34,437 INFO executing method select_feature_qty parameters ['9281', '1']
+2011-08-24 16:29:34,437 INFO 9281 has been selected by default
+2011-08-24 16:29:39,546 INFO executing method click_feature parameters ['5978']
+2011-08-24 16:29:45,078 INFO executing method select_feature_qty parameters ['3889', '2']
+2011-08-24 16:29:45,092 INFO 3889 has been selected by default
+ERROR
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 114, in select_feature_qty
+    test_client = self.driver.find_element_by_xpath("//input[contains(@value,'%s')]/parent::*/parent::*/parent::*//option[@value='%s']" % (feature_code, quantity))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,\'0093\')]/parent::*/parent::*/parent::*//option[@value=\'2\']"}' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 114, in select_feature_qty
+    test_client = self.driver.find_element_by_xpath("//input[contains(@value,'%s')]/parent::*/parent::*/parent::*//option[@value='%s']" % (feature_code, quantity))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,\'3887\')]/parent::*/parent::*/parent::*//option[@value=\'1\']"}' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 114, in select_feature_qty
+    test_client = self.driver.find_element_by_xpath("//input[contains(@value,'%s')]/parent::*/parent::*/parent::*//option[@value='%s']" % (feature_code, quantity))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,\'3876\')]/parent::*/parent::*/parent::*//option[@value=\'2\']"}' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 114, in select_feature_qty
+    test_client = self.driver.find_element_by_xpath("//input[contains(@value,'%s')]/parent::*/parent::*/parent::*//option[@value='%s']" % (feature_code, quantity))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,\'3887\')]/parent::*/parent::*/parent::*//option[@value=\'2\']"}' 
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 114, in select_feature_qty
+    test_client = self.driver.find_element_by_xpath("//input[contains(@value,'%s')]/parent::*/parent::*/parent::*//option[@value='%s']" % (feature_code, quantity))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//input[contains(@value,\'3889\')]/parent::*/parent::*/parent::*//option[@value=\'2\']"}' 
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0093_3876.csv
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0093_3889.csv
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0095_0093.csv
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_0095_3889.csv
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3877_0093.csv
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3877_3876.csv
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3877_3889.csv
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\Megalon 7147\MI filter\MI_1790_9281_3889_3876.csv
+
+----------------------------------------------------------------------
+Ran 14 tests in 1566.532s
+
+FAILED (failures=8, errors=5)
+2011-08-24 16:29:47,015 INFO Finished running all test cases

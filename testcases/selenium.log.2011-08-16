@@ -1,0 +1,57 @@
+2011-08-16 13:38:15,108 INFO Start to run all test cases
+2011-08-16 13:38:15,140 INFO Running test suite: c:\selectica\testcases\7143\Non_RAID
+runTest (TestContent.TestContent) ... 2011-08-16 13:38:26,296 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test1.csv
+2011-08-16 13:38:26,296 INFO executing method start_testing parameters ['7143AC1']
+2011-08-16 13:39:27,015 INFO executing method title parameters ['Maximum memory slots verification']
+2011-08-16 13:39:27,015 INFO Test Case: Maximum memory slots verification
+2011-08-16 13:39:32,030 INFO executing method select_feature_qty parameters ['1712', '16']
+2011-08-16 13:39:37,233 INFO executing method select_feature_qty parameters ['1713', '16', 'Memory']
+2011-08-16 13:39:42,390 INFO executing method click_check_product parameters []
+2011-08-16 13:39:58,515 INFO executing method verify_error_message_present parameters ['The number of memory slots used (32) exceeds the number of memory slots that are available (16)']
+2011-08-16 13:40:03,562 INFO executing method verify_configuration_valid parameters []
+2011-08-16 13:40:03,578 ERROR unable to find message that configuration is valid
+FAIL
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed")
+AssertionError: Test case failed
+
+----------------------------------------------------------------------
+Ran 1 test in 109.625s
+
+FAILED (failures=1)
+2011-08-16 13:40:04,765 INFO Finished running all test cases
+2011-08-16 13:40:59,280 INFO Start to run all test cases
+2011-08-16 13:40:59,296 INFO Running test suite: c:\selectica\testcases\7143\Non_RAID
+runTest (TestContent.TestContent) ... 2011-08-16 13:41:11,437 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test1.csv
+2011-08-16 13:41:11,437 INFO executing method start_testing parameters ['7143AC1']
+2011-08-16 13:42:07,233 INFO executing method title parameters ['Maximum memory slots verification']
+2011-08-16 13:42:07,233 INFO Test Case: Maximum memory slots verification
+2011-08-16 13:42:12,250 INFO executing method select_feature_qty parameters ['1712', '16']
+2011-08-16 13:42:17,421 INFO executing method select_feature_qty parameters ['1713', '16', 'Memory']
+2011-08-16 13:42:22,592 INFO executing method click_check_product parameters []
+2011-08-16 13:42:38,703 INFO executing method verify_error_message_present parameters ['The number of memory slots used (32) exceeds the number of memory slots that are available (16)']
+2011-08-16 13:42:43,733 INFO executing method verify_configuration_valid parameters []
+2011-08-16 13:42:43,765 ERROR unable to find message that configuration is valid
+FAIL
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\7143\Non_RAID\test1.csv
+
+----------------------------------------------------------------------
+Ran 1 test in 105.704s
+
+FAILED (failures=1)
+2011-08-16 13:42:45,000 INFO Finished running all test cases
+2011-08-16 17:35:38,171 INFO Start to run all test cases
+2011-08-16 17:35:38,328 INFO Running test suite: c:\selectica\testcases\7143\Non_RAID
+runTest (TestContent.TestContent) ... 

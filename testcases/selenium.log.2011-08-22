@@ -1,0 +1,45 @@
+2011-08-22 14:01:41,858 INFO Start to run all test cases
+2011-08-22 14:01:41,921 INFO Running test suite: c:\selectica\testcases\7145
+runTest (TestContent.TestContent) ... ERROR
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 11, in setUp
+    self.driver = webdriver.Firefox(firefox_profile=profile)
+  File "c:\python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\firefox\webdriver.py", line 46, in __init__
+    self.binary, timeout),
+  File "c:\python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\firefox\extension_connection.py", line 46, in __init__
+    self.binary.launch_browser(self.profile)
+  File "c:\python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\firefox\firefox_binary.py", line 44, in launch_browser
+    self._wait_until_connectable()
+  File "c:\python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\firefox\firefox_binary.py", line 87, in _wait_until_connectable
+    raise WebDriverException("Can't load the profile. Profile Dir : %s" % self.profile.path)
+WebDriverException: Message: "Can't load the profile. Profile Dir : c:\\docume~1\\admini~1\\locals~1\\temp\\tmpashpdl" 
+
+----------------------------------------------------------------------
+Ran 1 test in 66.266s
+
+FAILED (errors=1)
+2011-08-22 14:02:48,187 INFO Finished running all test cases
+2011-08-22 14:16:56,030 INFO Start to run all test cases
+2011-08-22 14:16:56,030 INFO Running test suite: c:\selectica\testcases\7145
+runTest (TestContent.TestContent) ... 2011-08-22 14:17:00,515 INFO Running test case c:\selectica\testcases\7145\testcase5a.csv
+2011-08-22 14:17:00,515 INFO executing method start_testing parameters ['7145AC1']
+2011-08-22 14:18:11,217 INFO executing method title parameters ['Verify whether sassata hd displayed without 3745']
+2011-08-22 14:18:11,217 INFO Test Case: Verify whether sassata hd displayed without 3745
+2011-08-22 14:18:16,250 INFO executing method select_feature_qty parameters ['3873', '1']
+2011-08-22 14:18:31,562 INFO executing method select_feature_qty parameters ['4191', '1']
+2011-08-22 14:18:46,858 INFO executing method select_feature_qty parameters ['95', '1']
+2011-08-22 14:18:57,092 INFO executing method click_feature parameters ['5977']
+2011-08-22 14:19:08,078 INFO executing method verify_oc_present parameters ['SAS hard disk drive']
+2011-08-22 14:19:13,125 INFO executing method verify_oc_present parameters ['SATA hard disk drive']
+2011-08-22 14:19:18,171 INFO executing method verify_feature_code_absent parameters ['3745', 'Primary array hard disk drives']
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 148.547s
+
+OK
+2011-08-22 14:19:24,578 INFO Finished running all test cases

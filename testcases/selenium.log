@@ -1,0 +1,91 @@
+2011-10-05 17:15:58,421 INFO Start to run all test cases
+2011-10-05 17:15:58,437 INFO Running test suite: c:\selectica\testcases\7143
+runTest (TestContent.TestContent) ... 2011-10-05 17:16:12,687 INFO Running test case c:\selectica\testcases\7143\test.csv
+2011-10-05 17:16:12,687 INFO executing method start_testing parameters ['7143AC1']
+2011-10-05 17:16:50,046 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-10-05 17:16:50,062 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-10-05 17:16:55,078 INFO executing method select_feature_qty parameters ['3873', '2']
+2011-10-05 17:17:05,421 INFO executing method click_feature parameters ['A1NP']
+2011-10-05 17:17:16,092 INFO executing method click_feature parameters ['5978', 'Configuration option']
+2011-10-05 17:17:26,953 INFO executing method select_feature_qty parameters ['0093', '2']
+2011-10-05 17:17:32,171 INFO executing method verify_feature_code_present parameters ['A1NX', 'Secondary array hard disk drives']
+2011-10-05 17:17:37,500 INFO executing method verify_feature_code_present parameters ['2499']
+2011-10-05 17:17:42,562 INFO executing method verify_feature_code_absent parameters ['A1NX', 'Primary array hard disk drives']
+2011-10-05 17:17:47,592 INFO executing method verify_feature_code_absent parameters ['3745']
+ERROR
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 25, in runTest
+    method = getattr(self, method_name)
+AttributeError: 'TestContent' object has no attribute 'verify_feature_qty'
+
+----------------------------------------------------------------------
+Ran 1 test in 115.594s
+
+FAILED (errors=1)
+2011-10-05 17:17:54,108 INFO Finished running all test cases
+2011-10-05 17:20:00,375 INFO Start to run all test cases
+2011-10-05 17:20:00,375 INFO Running test suite: c:\selectica\testcases\7143
+runTest (TestContent.TestContent) ... 2011-10-05 17:20:04,780 INFO Running test case c:\selectica\testcases\7143\test.csv
+2011-10-05 17:20:04,780 INFO executing method start_testing parameters ['7143AC1']
+2011-10-05 17:20:48,546 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-10-05 17:20:48,546 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-10-05 17:20:53,578 INFO executing method select_feature_qty parameters ['3873', '2']
+2011-10-05 17:21:03,875 INFO executing method click_feature parameters ['A1NP']
+2011-10-05 17:21:14,562 INFO executing method click_feature parameters ['5978', 'Configuration option']
+2011-10-05 17:21:25,375 INFO executing method select_feature_qty parameters ['0093', '2']
+2011-10-05 17:21:35,546 INFO executing method verify_feature_code_present parameters ['A1NX', 'Secondary array hard disk drives']
+2011-10-05 17:21:40,592 INFO executing method verify_feature_code_present parameters ['2499']
+2011-10-05 17:21:45,640 INFO executing method verify_feature_code_absent parameters ['A1NX', 'Primary array hard disk drives']
+2011-10-05 17:21:50,671 INFO executing method verify_feature_code_absent parameters ['3745']
+2011-10-05 17:21:55,733 INFO executing method verify_feature_qty parameters ['5522', '2']
+2011-10-05 17:21:55,733 ERROR 2 is not the default value of 5522
+FAIL
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\7143\test.csv
+
+----------------------------------------------------------------------
+Ran 1 test in 116.687s
+
+FAILED (failures=1)
+2011-10-05 17:21:57,062 INFO Finished running all test cases
+2011-10-05 17:26:02,717 INFO Start to run all test cases
+2011-10-05 17:26:02,717 INFO Running test suite: c:\selectica\testcases\7143
+runTest (TestContent.TestContent) ... 2011-10-05 17:26:06,890 INFO Running test case c:\selectica\testcases\7143\test.csv
+2011-10-05 17:26:06,890 INFO executing method start_testing parameters ['7143AC1']
+2011-10-05 17:26:44,875 INFO executing method title parameters ['Verify A1NX is filtered under secondary array']
+2011-10-05 17:26:44,875 INFO Test Case: Verify A1NX is filtered under secondary array
+2011-10-05 17:26:49,890 INFO executing method select_feature_qty parameters ['3873', '2']
+2011-10-05 17:27:00,171 INFO executing method click_feature parameters ['A1NP']
+2011-10-05 17:27:11,155 INFO executing method click_feature parameters ['5978', 'Configuration option']
+2011-10-05 17:27:22,046 INFO executing method select_feature_qty parameters ['0093', '2']
+2011-10-05 17:27:32,296 INFO executing method verify_feature_code_present parameters ['A1NX', 'Secondary array hard disk drives']
+2011-10-05 17:27:37,342 INFO executing method verify_feature_code_present parameters ['2499']
+2011-10-05 17:27:42,405 INFO executing method verify_feature_code_absent parameters ['A1NX', 'Primary array hard disk drives']
+2011-10-05 17:27:47,453 INFO executing method verify_feature_code_absent parameters ['3745']
+2011-10-05 17:27:52,530 INFO executing method verify_feature_qty_dropdown parameters ['5522', '2']
+2011-10-05 17:27:52,578 ERROR 2 is not the default value of 5522
+FAIL
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\7143\test.csv
+
+----------------------------------------------------------------------
+Ran 1 test in 111.188s
+
+FAILED (failures=1)
+2011-10-05 17:27:53,905 INFO Finished running all test cases

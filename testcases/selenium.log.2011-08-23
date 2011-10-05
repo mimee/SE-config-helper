@@ -1,0 +1,116 @@
+2011-08-23 17:30:19,640 INFO Start to run all test cases
+2011-08-23 17:30:19,765 INFO Running test suite: c:\selectica\testcases\7143\Non_RAID
+runTest (TestContent.TestContent) ... 2011-08-23 17:30:34,546 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test1.csv
+2011-08-23 17:30:34,546 INFO executing method start_testing parameters ['7143AC1']
+2011-08-23 17:31:26,530 INFO Start to run all test cases
+2011-08-23 17:31:26,530 INFO Running test suite: c:\selectica\testcases\7143\Non_RAID
+runTest (TestContent.TestContent) ... 2011-08-23 17:31:30,358 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test1.csv
+2011-08-23 17:31:30,358 INFO executing method start_testing parameters ['7143AC1']
+2011-08-23 17:32:15,530 INFO executing method title parameters ['Maximum memory slots verification']
+2011-08-23 17:32:15,530 INFO Test Case: Maximum memory slots verification
+2011-08-23 17:32:20,562 INFO executing method select_feature_qty parameters ['1712', '16']
+ERROR
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 104, in select_feature_qty
+    test_client = self.driver.find_element_by_xpath("//option[contains(@value,'%s')]" % (feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//option[contains(@value,\'1712\')]"}' 
+
+----------------------------------------------------------------------
+Ran 1 test in 55.312s
+
+FAILED (errors=1)
+2011-08-23 17:32:21,875 INFO Running test suite: c:\selectica\testcases\7145
+runTest (TestContent.TestContent) ... 2011-08-23 17:32:46,687 INFO Running test case c:\selectica\testcases\7145\testcase5a.csv
+2011-08-23 17:32:46,687 INFO executing method start_testing parameters ['7145AC1']
+2011-08-23 17:33:41,765 INFO executing method title parameters ['Verify whether sassata hd displayed without 3745']
+2011-08-23 17:33:41,765 INFO Test Case: Verify whether sassata hd displayed without 3745
+2011-08-23 17:33:46,780 INFO executing method select_feature_qty parameters ['3873', '1']
+ERROR
+
+======================================================================
+ERROR: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 27, in runTest
+    method(*parameters)
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 104, in select_feature_qty
+    test_client = self.driver.find_element_by_xpath("//option[contains(@value,'%s')]" % (feature_code))
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 190, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 525, in find_element
+    {'using': by, 'value': value})['value']
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\webdriver.py", line 144, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python27\lib\site-packages\selenium-2.2.0-py2.7.egg\selenium\webdriver\remote\errorhandler.py", line 110, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: u'Unable to locate element: {"method":"xpath","selector":"//option[contains(@value,\'3873\')]"}' 
+
+----------------------------------------------------------------------
+Ran 1 test in 86.781s
+
+FAILED (errors=1)
+2011-08-23 17:33:48,671 INFO Finished running all test cases
+2011-08-23 17:39:05,030 INFO Start to run all test cases
+2011-08-23 17:39:05,046 INFO Running test suite: c:\selectica\testcases\7143\Non_RAID
+runTest (TestContent.TestContent) ... 2011-08-23 17:39:11,155 INFO Running test case c:\selectica\testcases\7143\Non_RAID\test1.csv
+2011-08-23 17:39:11,155 INFO executing method start_testing parameters ['7143AC1']
+2011-08-23 17:39:55,967 INFO executing method title parameters ['Maximum memory slots verification']
+2011-08-23 17:39:55,967 INFO Test Case: Maximum memory slots verification
+2011-08-23 17:40:00,983 INFO executing method select_feature_qty parameters ['1712', '16']
+2011-08-23 17:40:01,015 INFO 1712 has been selected by default
+2011-08-23 17:40:06,187 INFO executing method select_feature_qty parameters ['1713', '16', 'Memory']
+2011-08-23 17:40:06,203 INFO 1713 has been selected by default
+2011-08-23 17:40:11,375 INFO executing method click_check_product parameters []
+2011-08-23 17:40:27,530 INFO executing method verify_error_message_present parameters ['The number of memory slots used (32) exceeds the number of memory slots that are available (16)']
+2011-08-23 17:40:32,546 INFO executing method verify_configuration_valid parameters []
+2011-08-23 17:40:32,578 ERROR unable to find message that configuration is valid
+FAIL
+
+======================================================================
+FAIL: runTest (TestContent.TestContent)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\IBM\workspace\Selenium\src\TestContent.py", line 31, in runTest
+    self.fail("Test case failed: %s" % self.file_path)
+AssertionError: Test case failed: c:\selectica\testcases\7143\Non_RAID\test1.csv
+
+----------------------------------------------------------------------
+Ran 1 test in 88.797s
+
+FAILED (failures=1)
+2011-08-23 17:40:33,842 INFO Running test suite: c:\selectica\testcases\7145
+runTest (TestContent.TestContent) ... 2011-08-23 17:40:45,015 INFO Running test case c:\selectica\testcases\7145\testcase5a.csv
+2011-08-23 17:40:45,015 INFO executing method start_testing parameters ['7145AC1']
+2011-08-23 17:41:59,717 INFO executing method title parameters ['Verify whether sassata hd displayed without 3745']
+2011-08-23 17:41:59,717 INFO Test Case: Verify whether sassata hd displayed without 3745
+2011-08-23 17:42:04,733 INFO executing method select_feature_qty parameters ['3873', '1']
+2011-08-23 17:42:04,750 INFO 3873 has been selected by default
+2011-08-23 17:42:20,030 INFO executing method select_feature_qty parameters ['4191', '1']
+2011-08-23 17:42:20,062 INFO 4191 has been selected by default
+2011-08-23 17:42:35,342 INFO executing method select_feature_qty parameters ['95', '1']
+2011-08-23 17:42:35,375 INFO 95 has been selected by default
+2011-08-23 17:42:40,515 INFO executing method click_feature parameters ['5977']
+2011-08-23 17:42:51,203 INFO executing method verify_oc_present parameters ['SAS hard disk drive']
+2011-08-23 17:42:56,233 INFO executing method verify_oc_present parameters ['SATA hard disk drive']
+2011-08-23 17:43:01,280 INFO executing method verify_feature_code_absent parameters ['3745', 'Primary array hard disk drives']
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 154.235s
+
+OK
+2011-08-23 17:43:08,078 INFO Finished running all test cases
